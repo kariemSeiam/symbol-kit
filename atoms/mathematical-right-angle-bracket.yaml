@@ -1,0 +1,100 @@
+# atoms/mathematical-right-angle-bracket.yaml
+# Right angle bracket. Pairs with ⟨ for any bracketed notation.
+glyph: ⟩
+name: MATHEMATICAL RIGHT ANGLE BRACKET
+codepoint: U+27E9
+unicode_block: Miscellaneous Mathematical Symbols-A
+unicode_version: "3.2"
+
+aliases:
+  - right angle bracket
+  - right chevron
+  - closing angle
+  - ket
+
+form:
+  default: text
+  variation_selectors:
+    none: text
+  emoji_form_exists: false
+
+weight_class: W1
+width_class: variable
+
+tier: 2
+
+semantic:
+  primary: bracket:angle-close
+  also:
+    - math:inner-product
+    - notation:set-delimiter
+    - type:generic-close
+  not:
+    - comparison:greater-than (use >)
+    - decoration
+
+pairs_with:
+  complement: ⟨ (MATHEMATICAL LEFT ANGLE BRACKET)
+  next_in_set:
+    - ⟨ ⌈ ⌉ ⌊ ⌋
+  family:
+    - ⟨ ⟩
+
+visual_neighbors:
+  - "> (GREATER-THAN SIGN) — ASCII"
+  - "› (SINGLE RIGHT-POINTING ANGLE QUOTATION MARK)"
+  - "〉 (RIGHT-POINTING ANGLE BRACKET) — alternate codepoint"
+
+prefer_over:
+  - "- > in math — ⟩ is the correct bracket"
+
+prefer_under:
+  - "- > in code where ASCII is required"
+
+anti_uses:
+  - "As a greater-than comparison — use >"
+  - "In body prose"
+
+platforms:
+  telegram_ios:      { renders: unverified }
+  telegram_android:  { renders: unverified }
+  telegram_desktop:  { renders: unverified }
+  telegram_web:      { renders: unverified }
+  imessage:          { renders: unverified }
+  whatsapp:          { renders: unverified }
+  discord:           { renders: unverified }
+  slack:             { renders: unverified }
+  github_markdown:   { renders: unverified }
+  vscode_default:    { renders: unverified }
+  terminal_monaco:   { renders: unverified }
+  terminal_cascadia: { renders: unverified }
+  terminal_jetbrains_mono: { renders: unverified }
+  chrome:            { renders: unverified }
+  safari:            { renders: unverified }
+  firefox:           { renders: unverified }
+  print_pdf:         { renders: unverified }
+
+rtl_behavior:
+  mirrors: true
+  arabic_equivalent: null
+  safe_in_rtl: true
+
+copy_paste_safe: true
+monochrome_guaranteed: true
+
+vibes:
+  - scientific-technical
+
+examples:
+  - context: "Inner product notation"
+    snippet: "⟨x, y⟩ = 0"
+  - context: "Generic type parameter"
+    snippet: "List⟨T⟩"
+
+cross_references:
+  pairs: []
+  sets: []
+  widgets: []
+
+added_in: 0.1.0
+last_verified: 2026-05-19

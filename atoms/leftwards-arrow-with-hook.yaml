@@ -1,0 +1,103 @@
+# atoms/leftwards-arrow-with-hook.yaml
+# The 'return' / 'back' arrow. Diff-patch: revert indicator.
+glyph: ↩
+name: LEFTWARDS ARROW WITH HOOK
+codepoint: U+21A9
+unicode_block: Arrows
+unicode_version: "1.1"
+
+aliases:
+  - return arrow
+  - back arrow
+  - undo arrow
+  - revert
+  - hook arrow
+
+form:
+  default: text
+  variation_selectors:
+    none: text
+  emoji_form_exists: false
+
+weight_class: W1
+width_class: variable
+
+tier: 2
+
+semantic:
+  primary: action:return
+  also:
+    - navigation:back-to-line
+    - action:undo
+    - diff:revert
+  not:
+    - direction:left (use ←)
+    - forward-navigation
+
+pairs_with:
+  complement: → (RIGHTWARDS ARROW)
+  next_in_set:
+    - ← (LEFTWARDS ARROW)
+    - → (RIGHTWARDS ARROW)
+  family:
+    - ← ↑ → ↓ ↩
+
+visual_neighbors:
+  - ← (left arrow) — direction, not action
+  - ↪ (RIGHTWARDS ARROW WITH HOOK) — opposite direction
+  - ↩ — should render consistently
+
+prefer_over:
+  - "← in code review for 'file moved here' — ↩ means 'return/revert'"
+  - "↩ when showing revert in diff context"
+
+prefer_under:
+  - "← for simple leftward navigation"
+
+anti_uses:
+  - "As a generic direction indicator — use ←"
+  - "In RTL body — the hook may confuse bidi algorithm"
+
+platforms:
+  telegram_ios:      { renders: unverified }
+  telegram_android:  { renders: unverified }
+  telegram_desktop:  { renders: unverified }
+  telegram_web:      { renders: unverified }
+  imessage:          { renders: unverified }
+  whatsapp:          { renders: unverified }
+  discord:           { renders: unverified }
+  slack:             { renders: unverified }
+  github_markdown:   { renders: unverified }
+  vscode_default:    { renders: unverified }
+  terminal_monaco:   { renders: unverified }
+  terminal_cascadia: { renders: unverified }
+  terminal_jetbrains_mono: { renders: unverified }
+  chrome:            { renders: unverified }
+  safari:            { renders: unverified }
+  firefox:           { renders: unverified }
+  print_pdf:         { renders: unverified }
+
+rtl_behavior:
+  mirrors: true
+  arabic_equivalent: null
+  safe_in_rtl: false
+
+copy_paste_safe: true
+monochrome_guaranteed: true
+
+vibes:
+  - diff-patch
+
+examples:
+  - context: "Revert in diff"
+    snippet: "↩ revert: abc1234"
+  - context: "Keyboard shortcut hint"
+    snippet: "↩ Enter  ·  Esc to cancel"
+
+cross_references:
+  pairs: []
+  sets: []
+  widgets: []
+
+added_in: 0.1.0
+last_verified: 2026-05-19
