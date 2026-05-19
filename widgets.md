@@ -117,7 +117,7 @@ repo/
 ---
 
 ---
-vibe: status-operational
+vibe: terminal-hacker
 weight: W2
 tier_budget: { tier3: 0, tier4: 0 }
 ---
@@ -169,5 +169,5 @@ tier_budget: { tier3: 0, tier4: 0 }
 | Health Board | terminal-hacker | W1 | ┌─┐│└┘●◐○ |
 | Inline Rating | modern-minimal | W1 | ● ○ |
 | File Tree | terminal-hacker | W1 | ├──│└── |
-| Metric Card | status-operational | W2 | ▓ ░ |
+| Metric Card | terminal-hacker | W2 | ▓ ░ |
 | Diff Header | diff-patch | W1 | + - ~ |
