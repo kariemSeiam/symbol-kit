@@ -34,7 +34,7 @@ semantic:
     - decoration
 
 pairs_with:
-  complement: " " (SPACE)
+  complement: null
   next_in_set:
     - ▓ (DARK SHADE)
     - ▒ (MEDIUM SHADE)

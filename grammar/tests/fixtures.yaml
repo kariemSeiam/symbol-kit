@@ -11,7 +11,7 @@
   expected: "▰▰▰▰▰▰▱▱▱▱"
 
 - expr: "PROGRESS(0.23, 20)"
-  expected: "▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱"
+  expected: "▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱"
 
 - expr: "SEVERITY(2)"
   expected: "●●○○"
@@ -23,7 +23,7 @@
   expected: "▓▓▓▓▓▓░░░░"
 
 - expr: 'KASHIDA_FILL("جيولينك", 15)'
-  expected: "جيولينكـــــــــ"
+  expected: "جيولينكــــــــ"
 
 - expr: "RATING(3)"
   expected: "●●●○○"

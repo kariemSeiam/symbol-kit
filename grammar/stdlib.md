@@ -31,10 +31,10 @@ BAR(12, 20, 10)  → ▓▓▓▓▓▓░░░░
 BAR(0.6, 1.0, 8) → ▓▓▓▓▓░░░
 ```
 
-## SPARK(values) → string
+## SPARK(values...) → string
 
 ```text
-SPARK([0.1, 0.5, 0.9, 0.3]) → ▂▄▇▃
+SPARK(0.1, 0.5, 0.9, 0.3) → ▂▅▇▃
 ```
 
 Maps normalized values to the sparkline ladder: ▁▂▃▄▅▆▇█

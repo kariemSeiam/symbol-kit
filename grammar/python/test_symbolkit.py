@@ -10,7 +10,7 @@ class TestSymbolKit(unittest.TestCase):
 
     def test_progress(self):
         self.assertEqual(render("PROGRESS(0.6)"), "▰▰▰▰▰▰▱▱▱▱")
-        self.assertEqual(render("PROGRESS(0.23, 20)"), "▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱")
+        self.assertEqual(render("PROGRESS(0.23, 20)"), "▰▰▰▰▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱")
 
     def test_severity(self):
         self.assertEqual(render("SEVERITY(2)"), "●●○○")
@@ -21,7 +21,7 @@ class TestSymbolKit(unittest.TestCase):
         self.assertEqual(render("BAR(0.6, 1.0, 8)"), "▓▓▓▓▓░░░")
 
     def test_spark(self):
-        self.assertEqual(render("SPARK([0.1, 0.5, 0.9, 0.3])"), "▂▄▇▃")
+        self.assertEqual(render("SPARK(0.1, 0.5, 0.9, 0.3)"), "▂▅▇▃")
 
     def test_tree(self):
         self.assertEqual(render("TREE(1, false)"), "├──")
@@ -29,7 +29,8 @@ class TestSymbolKit(unittest.TestCase):
         self.assertEqual(render("TREE(2, false)"), "│   ├──")
 
     def test_kashida(self):
-        self.assertEqual(render('KASHIDA_FILL("جيولينك", 15)'), "جيولينكـــــــــ")
+        expected = "جيولينك" + "ـ" * 8
+        self.assertEqual(render('KASHIDA_FILL("جيولينك", 15)'), expected)
 
     def test_rating(self):
         self.assertEqual(render("RATING(3)"), "●●●○○")

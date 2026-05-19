@@ -67,10 +67,10 @@ function defaultEnv(): Env {
     return "▓".repeat(filled) + "░".repeat(n - filled);
   });
 
-  e.registerFunction("SPARK", (values: number[]) => {
+  e.registerFunction("SPARK", (...values: number[]) => {
     const ladder = "▁▂▃▄▅▆▇█";
     return values
-      .map((v) => ladder[Math.min(Math.floor(v * (ladder.length - 1)), ladder.length - 1)])
+      .map((v) => ladder[Math.min(Math.round(v * (ladder.length - 1)), ladder.length - 1)])
       .join("");
   });
 
@@ -103,7 +103,7 @@ function defaultEnv(): Env {
 const GLOBAL_ENV = defaultEnv();
 
 function tokenize(expr: string): string[] {
-  const pattern = /"(?:\\.|[^"\\])*"|\(|\)|,|×|\+|@|[A-Za-z0-9_\-]+/g;
+  const pattern = /"(?:\\.|[^"\\])*"|\d+\.\d+|\(|\)|,|×|\+|@|[A-Za-z0-9_\-]+/g;
   return expr.match(pattern) ?? [];
 }
 
@@ -139,8 +139,9 @@ function parseAndEval(tokens: string[], pos: number, env: Env): [string, number]
     return [fn(...args), p + 1];
   }
 
-  if (/^\d+$/.test(tok)) return [tok, pos + 1];
-  if (!isNaN(Number(tok))) return [String(Number(tok)), pos + 1];
+  if (tok === "true" || tok === "false") return [tok === "true", pos + 1];
+  if (/^\d+$/.test(tok)) return [parseInt(tok, 10), pos + 1];
+  if (!isNaN(Number(tok))) return [Number(tok), pos + 1];
   return [tok, pos + 1];
 }
 

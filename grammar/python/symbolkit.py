@@ -64,17 +64,17 @@ def _default_env() -> Env:
         filled = round((value / max_) * n) if max_ else 0
         return "▓" * filled + "░" * (n - filled)
 
-    def SPARK(values: List[float]) -> str:
+    def SPARK(*values: float) -> str:
         ladder = "▁▂▃▄▅▆▇█"
         out = ""
         for v in values:
-            idx = min(int(v * (len(ladder) - 1)), len(ladder) - 1)
+            idx = min(round(v * (len(ladder) - 1)), len(ladder) - 1)
             out += ladder[idx]
         return out
 
     def TREE(depth: int, last: bool) -> str:
         indent = "│   " * (depth - 1)
-        branch = "└── " if last else "├── "
+        branch = "└──" if last else "├──"
         return indent + branch
 
     def KASHIDA_FILL(text: str, width: int) -> str:
@@ -108,7 +108,7 @@ ENV = _default_env()
 
 
 def tokenize(expr: str) -> List[str]:
-    pattern = r'"(?:\\.|[^"\\])*"|\(|\)|,|×|\+|@|[A-Za-z0-9_\-]+'
+    pattern = r'"(?:\\.|[^"\\])*"|\d+\.\d+|\(|\)|,|×|\+|@|[A-Za-z0-9_\-]+'
     return re.findall(pattern, expr)
 
 
@@ -152,10 +152,12 @@ def _parse_and_eval(tokens: List[str], pos: int, env: Env) -> tuple[str, int]:
             raise SymbolKitError("Missing )")
         return fn(*args), pos + 1
 
+    if tok in ("true", "false"):
+        return tok == "true", pos + 1
     if tok.isdigit():
-        return str(int(tok)), pos + 1
+        return int(tok), pos + 1
     try:
-        return str(float(tok)), pos + 1
+        return float(tok), pos + 1
     except ValueError:
         return tok, pos + 1
 
