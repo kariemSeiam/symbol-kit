@@ -1,0 +1,102 @@
+# atoms/box-drawings-light-arc-down-and-right.yaml
+# Top-left rounded corner. Used in maximalist-decorative frames.
+glyph: ╭
+name: BOX DRAWINGS LIGHT ARC DOWN AND RIGHT
+codepoint: U+256D
+unicode_block: Box Drawing
+unicode_version: "1.1"
+
+aliases:
+  - rounded top-left
+  - arc corner TL
+  - smooth corner top-left
+
+form:
+  default: text
+  variation_selectors:
+    none: text
+  emoji_form_exists: false
+
+weight_class: W2
+width_class: narrow
+
+tier: 2
+
+semantic:
+  primary: frame:corner-rounded-tl
+  also:
+    - border:decorative-top-start
+    - structure:soft-frame
+  not:
+    - structure:grid-cell
+
+pairs_with:
+  complement: ╯ (BOX DRAWINGS LIGHT ARC UP AND LEFT)
+  next_in_set:
+    - ╮ (BOX DRAWINGS LIGHT ARC DOWN AND LEFT)
+    - ╰ (BOX DRAWINGS LIGHT ARC UP AND RIGHT)
+    - ╯ (BOX DRAWINGS LIGHT ARC UP AND LEFT)
+  family:
+    - ╭ ╮ ╰ ╯
+
+visual_neighbors:
+  - ┌ (sharp top-left corner) — W1
+  - ⌈ (LEFT CEILING) — math bracket
+  - ⌜ (TOP LEFT CORNER) — smaller
+
+prefer_over:
+  - "┌ in decorative or friendly UIs where sharp corners feel harsh"
+
+prefer_under:
+  - "┌ in terminal-hacker vibe — rounded corners break the discipline"
+
+anti_uses:
+  - "Mixed with sharp box-drawing corners (┌) in the same frame"
+  - "Outside monospace font"
+  - "In terminal-hacker vibe"
+
+platforms:
+  telegram_ios:      { renders: unverified }
+  telegram_android:  { renders: unverified }
+  telegram_desktop:  { renders: unverified }
+  telegram_web:      { renders: unverified }
+  imessage:          { renders: unverified }
+  whatsapp:          { renders: unverified }
+  discord:           { renders: unverified }
+  slack:             { renders: unverified }
+  github_markdown:   { renders: unverified }
+  vscode_default:    { renders: unverified }
+  terminal_monaco:   { renders: unverified }
+  terminal_cascadia: { renders: unverified }
+  terminal_jetbrains_mono: { renders: unverified }
+  chrome:            { renders: unverified }
+  safari:            { renders: unverified }
+  firefox:           { renders: unverified }
+  print_pdf:         { renders: unverified }
+
+rtl_behavior:
+  mirrors: false
+  arabic_equivalent: null
+  safe_in_rtl: false
+
+copy_paste_safe: true
+monochrome_guaranteed: true
+
+vibes:
+  - maximalist-decorative
+
+examples:
+  - context: "Decorative rounded frame"
+    snippet: "╭──────────╮\n│  message  │\n╰──────────╯"
+  - context: "Achievement card"
+    snippet: "╭────────╮\n│  ★ ★ ★  │\n╰────────╯"
+
+cross_references:
+  pairs:
+    - "pairs.md#box-corners"
+  sets:
+    - "sets.md#box-drawing-lines"
+  widgets: []
+
+added_in: 0.1.0
+last_verified: 2026-05-19

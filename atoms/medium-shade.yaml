@@ -1,0 +1,109 @@
+# atoms/medium-shade.yaml
+# The 50% density block. Fills the gap between light-shade (░) and dark-shade (▓)
+# in the shade ladder. Required for 4-step sparklines.
+glyph: ▒
+name: MEDIUM SHADE
+codepoint: U+2592
+unicode_block: Block Elements
+unicode_version: "1.1"
+
+aliases:
+  - 50% shade
+  - half shade
+  - medium block
+  - checker shade
+  - stipple
+
+form:
+  default: text
+  variation_selectors:
+    none: text
+  emoji_form_exists: false
+
+weight_class: W2
+width_class: variable
+
+tier: 1
+
+semantic:
+  primary: density:50pct
+  also:
+    - spark:value-mid
+    - heat:medium
+    - volume:half
+  not:
+    - decoration
+
+pairs_with:
+  complement: null
+  next_in_set:
+    - ░ (LIGHT SHADE)
+    - ▓ (DARK SHADE)
+    - █ (FULL BLOCK)
+  family:
+    - ░ ▓ █
+
+visual_neighbors:
+  - ░ (LIGHT SHADE) — 25%, lighter
+  - ▓ (DARK SHADE) — 75%, darker
+  - █ (FULL BLOCK) — 100%, solid
+  - ▤ (SQUARE WITH HORIZONTAL FILL)
+
+prefer_over:
+  - "░ ▓ when you need 4-step precision instead of 3-step"
+  - "ASCII # in terminal sparklines"
+
+prefer_under:
+  - "░ when x-height rendering on small fonts makes ▒ look identical to ▓"
+
+anti_uses:
+  - "As standalone decoration — the checker pattern draws unintended attention"
+  - "In proportional fonts at small sizes — the checkers blur"
+
+platforms:
+  telegram_ios:      { renders: unverified }
+  telegram_android:  { renders: unverified }
+  telegram_desktop:  { renders: unverified }
+  telegram_web:      { renders: unverified }
+  imessage:          { renders: unverified }
+  whatsapp:          { renders: unverified }
+  discord:           { renders: unverified }
+  slack:             { renders: unverified }
+  github_markdown:   { renders: unverified }
+  vscode_default:    { renders: unverified }
+  terminal_monaco:   { renders: unverified }
+  terminal_cascadia: { renders: unverified }
+  terminal_jetbrains_mono: { renders: unverified }
+  chrome:            { renders: unverified }
+  safari:            { renders: unverified }
+  firefox:           { renders: unverified }
+  print_pdf:         { renders: unverified }
+
+rtl_behavior:
+  mirrors: false
+  arabic_equivalent: null
+  safe_in_rtl: true
+
+copy_paste_safe: true
+monochrome_guaranteed: true
+
+vibes:
+  - terminal-hacker
+  - status-operational
+
+examples:
+  - context: "4-step sparkline"
+    snippet: "CPU ░▒▓█▓▒░"
+  - context: "Heatmap cell mid"
+    snippet: "▒  45%"
+
+cross_references:
+  pairs:
+    - "pairs.md#full-light-shade"
+  sets:
+    - "sets.md#shade-ladder"
+  widgets:
+    - "widgets.md#metric-card"
+
+added_in: 0.1.0
+last_verified: 2026-05-19
