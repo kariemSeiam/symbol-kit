@@ -1,0 +1,94 @@
+# atoms/greek-small-letter-chi.yaml
+# Greek lowercase CHI. Scientific-technical core.
+glyph: χ
+name: GREEK SMALL LETTER CHI
+codepoint: U+03C7
+unicode_block: Greek and Coptic
+unicode_version: "1.1"
+
+aliases:
+  - chi
+  - chi-squared, distribution, statistical-test
+
+form:
+  default: text
+  variation_selectors:
+    none: text
+  emoji_form_exists: false
+
+weight_class: W1
+width_class: variable
+
+tier: 2
+
+semantic:
+  primary: greek:chi
+  also:
+    - statistics:test
+  not:
+    - decoration
+    - emoji
+
+pairs_with:
+  complement: null
+  next_in_set:
+    - α β γ δ ε θ λ μ π ρ σ τ φ χ ψ ω
+  family:
+    - α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ σ τ υ φ χ ψ ω
+
+visual_neighbors:
+  - Latin lookalikes vary per letter
+
+prefer_over:
+  - "ASCII equivalent in math contexts — χ is the correct Greek letter"
+
+prefer_under:
+  - "ASCII equivalent in code comments where Unicode may break"
+
+anti_uses:
+  - "As decoration in non-scientific contexts"
+  - "As a Latin letter lookalike in body prose"
+
+platforms:
+  telegram_ios:      { renders: unverified }
+  telegram_android:  { renders: unverified }
+  telegram_desktop:  { renders: unverified }
+  telegram_web:      { renders: unverified }
+  imessage:          { renders: unverified }
+  whatsapp:          { renders: unverified }
+  discord:           { renders: unverified }
+  slack:             { renders: unverified }
+  github_markdown:   { renders: unverified }
+  vscode_default:    { renders: unverified }
+  terminal_monaco:   { renders: unverified }
+  terminal_cascadia: { renders: unverified }
+  terminal_jetbrains_mono: { renders: unverified }
+  chrome:            { renders: unverified }
+  safari:            { renders: unverified }
+  firefox:           { renders: unverified }
+  print_pdf:         { renders: unverified }
+
+rtl_behavior:
+  mirrors: false
+  arabic_equivalent: null
+  safe_in_rtl: true
+
+copy_paste_safe: true
+monochrome_guaranteed: true
+
+vibes:
+  - scientific-technical
+
+examples:
+  - context: "Parameter in equation"
+    snippet: "χ: learning rate = 0.001"
+  - context: "Greek parameter list"
+    snippet: "χ = 0.01"
+
+cross_references:
+  pairs: []
+  sets: []
+  widgets: []
+
+added_in: 0.1.0
+last_verified: 2026-05-19

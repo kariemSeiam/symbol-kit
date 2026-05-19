@@ -20,6 +20,7 @@ Memorize these. Cover ~80% of daily use.
 | — | em-dash | separator:structural |
 | · | middle-dot | separator:inline |
 | ⋯ | midline-horizontal-ellipsis | state:overflow |
+| ± | plus-minus-sign | math:plus-minus |
 | → | rightwards-arrow | flow:next |
 | ⚠ | warning-sign | severity:warning |
 | ○ | white-circle | status:off |
@@ -27,27 +28,129 @@ Memorize these. Cover ~80% of daily use.
 
 ---
 
-## Tier 1 — Daily (18 atoms)
+## Tier 1 — Daily (46 atoms)
 
 Reach without thinking.
 
 | Glyph | Atom | Primary Use |
 |-------|------|-------------|
+| ٨ | arabic-indic-digit-eight | numeral:8 |
+| ٥ | arabic-indic-digit-five | numeral:5 |
+| ٤ | arabic-indic-digit-four | numeral:4 |
+| ٩ | arabic-indic-digit-nine | numeral:9 |
+| ١ | arabic-indic-digit-one | numeral:1 |
+| ٧ | arabic-indic-digit-seven | numeral:7 |
+| ٦ | arabic-indic-digit-six | numeral:6 |
+| ٣ | arabic-indic-digit-three | numeral:3 |
+| ٢ | arabic-indic-digit-two | numeral:2 |
+| ٠ | arabic-indic-digit-zero | numeral:0 |
 | ـ | arabic-tatweel | arabic:justification-fill |
+| ★ | black-star | reward:filled |
+| ┬ | box-drawings-light-down-and-horizontal | frame:joint-down |
 | ┐ | box-drawings-light-down-and-left | corner:top-right |
 | ┌ | box-drawings-light-down-and-right | corner:top-left |
 | ─ | box-drawings-light-horizontal | line:horizontal-tile |
+| ┴ | box-drawings-light-up-and-horizontal | frame:joint-up |
 | ┘ | box-drawings-light-up-and-left | corner:bottom-right |
 | └ | box-drawings-light-up-and-right | corner:bottom-left |
 | │ | box-drawings-light-vertical | line:vertical-tile |
 | ┤ | box-drawings-light-vertical-and-left | junction:vertical-left |
 | ├ | box-drawings-light-vertical-and-right | tree:branch |
 | • | bullet | list:bullet |
+| ⊘ | circled-division-slash | status:error |
+| ↻ | clockwise-open-circle-arrow | action:retry |
 | ▓ | dark-shade | shade:dark |
 | ↓ | downwards-arrow | trend:down |
 | – | en-dash | range:numeric |
+| ۸ | extended-arabic-indic-digit-eight | numeral:8-persian |
+| ۵ | extended-arabic-indic-digit-five | numeral:5-persian |
+| ۴ | extended-arabic-indic-digit-four | numeral:4-persian |
+| ۹ | extended-arabic-indic-digit-nine | numeral:9-persian |
+| ۱ | extended-arabic-indic-digit-one | numeral:1-persian |
+| ۷ | extended-arabic-indic-digit-seven | numeral:7-persian |
+| ۶ | extended-arabic-indic-digit-six | numeral:6-persian |
+| ۳ | extended-arabic-indic-digit-three | numeral:3-persian |
+| ۲ | extended-arabic-indic-digit-two | numeral:2-persian |
+| ۰ | extended-arabic-indic-digit-zero | numeral:0-persian |
 | █ | full-block | block:solid |
+| ⚡ | high-voltage-sign | alert:urgent |
 | … | horizontal-ellipsis | prose:trailing-thought |
 | ← | leftwards-arrow | flow:previous-LTR |
 | ░ | light-shade | shade:light |
+| ▒ | medium-shade | density:50pct |
 | ↑ | upwards-arrow | trend:up |
+| ☆ | white-star | reward:empty |
+
+---
+
+## Tier 2 — Workshop (57 atoms)
+
+Specialized, recallable.
+
+| Glyph | Atom | Primary Use |
+|-------|------|-------------|
+| ≈ | almost-equal-to | math:approximately-equal |
+| ، | arabic-comma | punctuation:comma |
+| ؟ | arabic-question-mark | punctuation:question |
+| ؛ | arabic-semicolon | punctuation:semicolon |
+| ♣ | black-club-suit | suit:club |
+| ♦ | black-diamond-suit | suit:diamond |
+| ♥ | black-heart-suit | suit:heart |
+| ▸ | black-right-pointing-small-triangle | ui:expand-right |
+| ♠ | black-spade-suit | suit:spade |
+| ☀ | black-sun-with-rays | weather:sunny |
+| ╮ | box-drawings-light-arc-down-and-left | frame:corner-rounded-tr |
+| ╭ | box-drawings-light-arc-down-and-right | frame:corner-rounded-tl |
+| ╯ | box-drawings-light-arc-up-and-left | frame:corner-rounded-br |
+| ╰ | box-drawings-light-arc-up-and-right | frame:corner-rounded-bl |
+| ┼ | box-drawings-light-vertical-and-horizontal | frame:joint-cross |
+| ☁ | cloud | weather:cloudy |
+| ∮ | contour-integral | math:contour-integral |
+| ≥ | greater-than-or-equal-to | math:greater-than-or-equal |
+| α | greek-small-letter-alpha | greek:angle |
+| β | greek-small-letter-beta | greek:coefficient |
+| χ | greek-small-letter-chi | greek:chi |
+| δ | greek-small-letter-delta | greek:difference |
+| ε | greek-small-letter-epsilon | greek:error |
+| γ | greek-small-letter-gamma | greek:discount |
+| λ | greek-small-letter-lamda | greek:wavelength |
+| μ | greek-small-letter-mu | greek:mean |
+| ω | greek-small-letter-omega | greek:angular-frequency |
+| φ | greek-small-letter-phi | greek:phase |
+| π | greek-small-letter-pi | greek:pi |
+| ψ | greek-small-letter-psi | greek:wave-function |
+| ρ | greek-small-letter-rho | greek:density |
+| σ | greek-small-letter-sigma | greek:sum |
+| τ | greek-small-letter-tau | greek:time-constant |
+| θ | greek-small-letter-theta | greek:angle |
+| ≡ | identical-to | math:identical |
+| ∫ | integral | math:integral |
+| ⌈ | left-ceiling | math:ceiling-open |
+| ⌊ | left-floor | math:floor-open |
+| ↩ | leftwards-arrow-with-hook | action:return |
+| ≤ | less-than-or-equal-to | math:less-than-or-equal |
+| ⟨ | mathematical-left-angle-bracket | bracket:angle-open |
+| ⟩ | mathematical-right-angle-bracket | bracket:angle-close |
+| ∑ | n-ary-summation | math:summation |
+| ∇ | nabla | math:gradient |
+| ≠ | not-equal-to | math:not-equal |
+| ∂ | partial-differential | math:partial-derivative |
+| ⌉ | right-ceiling | math:ceiling-close |
+| ⌋ | right-floor | math:floor-close |
+| ☃ | snowman | weather:snow |
+| ☂ | umbrella | weather:rain |
+| ♗ | white-chess-bishop | chess:bishop |
+| ♔ | white-chess-king | chess:king |
+| ♘ | white-chess-knight | chess:knight |
+| ♙ | white-chess-pawn | chess:pawn |
+| ♕ | white-chess-queen | chess:queen |
+| ♖ | white-chess-rook | chess:rook |
+| ▹ | white-right-pointing-small-triangle | ui:collapsed-right |
+
+---
+
+## Tier 3 — Library (13 atoms)
+
+Need lookup. Not for production without justification.
+
+See `atoms/` directory for full metadata.

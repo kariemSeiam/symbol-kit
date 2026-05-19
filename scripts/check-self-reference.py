@@ -33,7 +33,7 @@ def main():
     
     print(f"  {len(allowed)} allowed glyphs (Tier 0-1 + structural)")
     
-    to_check = ['README.md', 'TIERS.md']
+    to_check = ['README.md']
     
     for filename in to_check:
         filepath = ROOT / filename

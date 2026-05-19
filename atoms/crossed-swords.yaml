@@ -1,0 +1,95 @@
+# atoms/crossed-swords.yaml
+# CROSSED SWORDS. Ornament/detail symbol.
+glyph: ⚔
+name: CROSSED SWORDS
+codepoint: U+2694
+unicode_block: Miscellaneous Symbols
+unicode_version: "4.1"
+
+aliases:
+  - swords
+  - crossed-swords
+  - combat
+  - battle
+
+form:
+  default: text
+  variation_selectors:
+    none: text
+  emoji_form_exists: false
+
+weight_class: W2
+width_class: variable
+
+tier: 3
+
+semantic:
+  primary: weapon:swords
+  also:
+    - game:combat, equipment:weapon
+  not:
+    - decoration-standalone
+    - status-indicator
+
+pairs_with:
+  complement: null
+  next_in_set: []
+  family: []
+
+visual_neighbors:
+  - "Related symbols: ⚔"
+
+prefer_over:
+  - "Similar ornament glyph when ⚔ fits the vibe better"
+
+prefer_under:
+  - "Simpler glyph in minimalist or terminal contexts"
+
+anti_uses:
+  - "As status indicator — these are ornamental, not functional"
+  - "In terminal-hacker or operational vibes"
+  - "In scientific or diff-patch contexts"
+
+platforms:
+  telegram_ios:      { renders: unverified }
+  telegram_android:  { renders: unverified }
+  telegram_desktop:  { renders: unverified }
+  telegram_web:      { renders: unverified }
+  imessage:          { renders: unverified }
+  whatsapp:          { renders: unverified }
+  discord:           { renders: unverified }
+  slack:             { renders: unverified }
+  github_markdown:   { renders: unverified }
+  vscode_default:    { renders: unverified }
+  terminal_monaco:   { renders: unverified }
+  terminal_cascadia: { renders: unverified }
+  terminal_jetbrains_mono: { renders: unverified }
+  chrome:            { renders: unverified }
+  safari:            { renders: unverified }
+  firefox:           { renders: unverified }
+  print_pdf:         { renders: unverified }
+
+rtl_behavior:
+  mirrors: false
+  arabic_equivalent: null
+  safe_in_rtl: true
+
+copy_paste_safe: true
+monochrome_guaranteed: true
+
+vibes:
+  - game-ui
+
+examples:
+  - context: "Widget usage"
+    snippet: "⚔ example"
+  - context: "General usage"
+    snippet: "⚔ example"
+
+cross_references:
+  pairs: []
+  sets: []
+  widgets: []
+
+added_in: 0.1.0
+last_verified: 2026-05-19
