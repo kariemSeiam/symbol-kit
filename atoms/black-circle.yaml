@@ -1,0 +1,134 @@
+# atoms/black-circle.yaml
+# The canonical "on" / "live" / "filled" indicator. Together with WHITE CIRCLE
+# (○) and CIRCLE WITH LEFT HALF BLACK (◐) it forms the universal status triad.
+glyph: ●
+name: BLACK CIRCLE
+codepoint: U+25CF
+unicode_block: Geometric Shapes
+unicode_version: "1.1"
+
+aliases:
+  - filled dot
+  - solid dot
+  - status dot
+  - live dot
+  - on indicator
+  - filled bullet
+  - the live one
+  - presence dot
+
+form:
+  default: text
+  variation_selectors:
+    none: text
+  emoji_form_exists: false
+
+weight_class: W1
+width_class: variable
+
+tier: 0
+
+semantic:
+  primary: status:on
+  also:
+    - status:live
+    - severity:full
+    - marker:primary
+    - rating:filled-step
+    - presence:active
+  not:
+    - decoration
+    - body-prose bullet
+    - emoji affect
+
+pairs_with:
+  complement: ○ (WHITE CIRCLE)
+  next_in_set:
+    - ◐ (CIRCLE WITH LEFT HALF BLACK)
+    - ◑ (CIRCLE WITH RIGHT HALF BLACK)
+  family:
+    - ◯ (LARGE CIRCLE)
+    - ◉ (FISHEYE)
+    - ⊙ (CIRCLED DOT OPERATOR)
+
+visual_neighbors:
+  - ⬤ (BLACK LARGE CIRCLE) — heavier, W3
+  - ⚫ (MEDIUM BLACK CIRCLE) — emoji-form, VS16 default
+  - ⬣ (BLACK HORIZONTAL ELLIPSE) — wrong aspect
+  - • (BULLET) — bullet semantics, prose only
+  - ∙ (BULLET OPERATOR) — math semantics
+  - ◉ (FISHEYE) — extra inner ring
+  - 🔴 (LARGE RED CIRCLE) — colour, emoji
+
+prefer_over:
+  - "⬤ when surrounded by W1 glyphs — match weight"
+  - "• when used as a standalone status indicator — • means bullet"
+  - "🔴 in monochrome contexts — colour breaks the surface"
+
+prefer_under:
+  - "⬤ in standalone HUD where extra visual weight serves emphasis"
+  - "🔴 in colour-friendly UIs that lean into red-for-live"
+
+anti_uses:
+  - "As bullet in body prose — use • instead, ● reads as status"
+  - "Inside <code> next to emoji-form ⚠️ — text/emoji surface collision"
+  - "In RTL Arabic text adjacent to ٠ (ARABIC-INDIC DIGIT ZERO) — they conflate"
+  - "Three or more ● in a row as filled-step rating — readers count slowly past 3, use BAR()"
+
+platforms:
+  telegram_ios:      { renders: unverified }
+  telegram_android:  { renders: unverified }
+  telegram_desktop:  { renders: unverified }
+  telegram_web:      { renders: unverified }
+  imessage:          { renders: unverified }
+  whatsapp:          { renders: unverified }
+  discord:           { renders: unverified }
+  slack:             { renders: unverified }
+  github_markdown:   { renders: unverified }
+  vscode_default:    { renders: unverified }
+  terminal_monaco:   { renders: unverified }
+  terminal_cascadia: { renders: unverified }
+  terminal_jetbrains_mono: { renders: unverified }
+  chrome:            { renders: unverified }
+  safari:            { renders: unverified }
+  firefox:           { renders: unverified }
+  print_pdf:         { renders: unverified }
+
+rtl_behavior:
+  mirrors: false
+  arabic_equivalent: null
+  safe_in_rtl: true
+
+copy_paste_safe: true
+monochrome_guaranteed: true
+
+vibes:
+  - terminal-hacker
+  - modern-minimal
+  - rtl-arabic-elegant
+  - scientific-technical
+  - game-ui
+  - status-operational
+
+examples:
+  - context: "Telegram footer status line"
+    snippet: "● live · 47ms · 99.9%"
+  - context: "Health board row, mixed states"
+    snippet: "● geolink-api   ◐ hvar-cron   ○ taxi-arab"
+  - context: "Severity ladder 3/4"
+    snippet: "● ● ● ○"
+  - context: "Modern-minimal HUD, monochrome surface"
+    snippet: "● 12 ▰▰▰▰▰▰▱▱▱▱  60%"
+
+cross_references:
+  pairs:
+    - "pairs.md#filled-empty-circles"
+  sets:
+    - "sets.md#severity-dots"
+    - "sets.md#circle-fill-progression"
+  widgets:
+    - "widgets.md#status-line"
+    - "widgets.md#health-card"
+
+added_in: 0.1.0
+last_verified: 2026-05-19

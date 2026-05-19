@@ -1,0 +1,119 @@
+# atoms/box-drawings-light-down-and-right.yaml
+# Top-left corner of a light box. Use with ─, │, ┐, ┘, └ for full frames.
+glyph: ┌
+name: BOX DRAWINGS LIGHT DOWN AND RIGHT
+codepoint: U+250C
+unicode_block: Box Drawing
+unicode_version: "1.1"
+
+aliases:
+  - top-left corner
+  - corner down-right
+  - box NW
+  - frame start
+  - the upper-left
+
+form:
+  default: text
+  variation_selectors:
+    none: text
+  emoji_form_exists: false
+
+weight_class: W1
+width_class: 2ch
+
+tier: 1
+
+semantic:
+  primary: corner:top-left
+  also:
+    - frame:start
+    - tree:root-stub
+  not:
+    - bracket
+    - L-shape decoration
+
+pairs_with:
+  complement: ┘ (BOX DRAWINGS LIGHT UP AND LEFT)
+  next_in_set:
+    - ┐ (BOX DRAWINGS LIGHT DOWN AND LEFT)
+    - └ (BOX DRAWINGS LIGHT UP AND RIGHT)
+    - ┘ (BOX DRAWINGS LIGHT UP AND LEFT)
+  family:
+    - "┌ ┐ └ ┘ ┏ ┓ ┗ ┛ ╔ ╗ ╚ ╝"
+
+visual_neighbors:
+  - "┏ (BOX DRAWINGS HEAVY DOWN AND RIGHT) — W3"
+  - "╔ (BOX DRAWINGS DOUBLE DOWN AND RIGHT) — doubled"
+  - "╭ (BOX DRAWINGS LIGHT ARC DOWN AND RIGHT) — rounded corner"
+  - "⌜ (TOP LEFT CORNER) — punctuation-class, smaller"
+  - "Γ (GREEK CAPITAL LETTER GAMMA) — letter, not frame"
+
+prefer_over:
+  - "┏ when surrounding atoms are W1/W2 — match weight"
+  - "╔ for boxes in plain status UIs — doubled reads as decorative"
+  - "+ ASCII corner — survives copy-paste, doesn't fragment in word boundaries"
+
+prefer_under:
+  - "╭ in maximalist-decorative vibe where rounded corners read warmer"
+  - "┏ in headers or emphasis bands"
+
+anti_uses:
+  - "Mixed with ╮ or ┓ in same box — junction weight clash"
+  - "As prose bracket — use ⌜ or 「"
+  - "In proportional fonts — corners drift from horizontal lines"
+  - "Standalone — corners imply structure they may not have"
+
+platforms:
+  telegram_ios:      { renders: unverified }
+  telegram_android:  { renders: unverified }
+  telegram_desktop:  { renders: unverified }
+  telegram_web:      { renders: unverified }
+  imessage:          { renders: unverified }
+  whatsapp:          { renders: unverified }
+  discord:           { renders: unverified }
+  slack:             { renders: unverified }
+  github_markdown:   { renders: unverified }
+  vscode_default:    { renders: unverified }
+  terminal_monaco:   { renders: unverified }
+  terminal_cascadia: { renders: unverified }
+  terminal_jetbrains_mono: { renders: unverified }
+  chrome:            { renders: unverified }
+  safari:            { renders: unverified }
+  firefox:           { renders: unverified }
+  print_pdf:         { renders: unverified }
+
+rtl_behavior:
+  mirrors: true
+  arabic_equivalent: ┐ (BOX DRAWINGS LIGHT DOWN AND LEFT)
+  safe_in_rtl: false
+
+copy_paste_safe: true
+monochrome_guaranteed: true
+
+vibes:
+  - terminal-hacker
+  - scientific-technical
+  - status-operational
+
+examples:
+  - context: "Card top-left"
+    snippet: "┌──────────┐\n│  ● live  │\n└──────────┘"
+  - context: "Sub-shell prompt"
+    snippet: "┌─[kariem@host]\n└─$ "
+  - context: "Boxed warning"
+    snippet: "┌─ ⚠ certificate expires in 7d ─┐"
+  - context: "Two-column box pair"
+    snippet: "┌────────┐  ┌────────┐\n│ ● api  │  │ ◐ cron │\n└────────┘  └────────┘"
+
+cross_references:
+  pairs:
+    - "pairs.md#box-corners"
+  sets:
+    - "sets.md#box-drawing-light"
+  widgets:
+    - "widgets.md#card-frame"
+    - "widgets.md#prompt-frame"
+
+added_in: 0.1.0
+last_verified: 2026-05-19

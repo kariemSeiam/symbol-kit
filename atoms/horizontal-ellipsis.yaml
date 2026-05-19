@@ -1,0 +1,120 @@
+# atoms/horizontal-ellipsis.yaml
+# Baseline ellipsis — the typographic standard for trailing thought in prose.
+# Distinct from ⋯ (MIDLINE HORIZONTAL ELLIPSIS) which is for technical UI.
+glyph: …
+name: HORIZONTAL ELLIPSIS
+codepoint: U+2026
+unicode_block: General Punctuation
+unicode_version: "1.1"
+
+aliases:
+  - ellipsis
+  - three dots
+  - trailing dots
+  - dot dot dot
+  - prose ellipsis
+  - the pause
+
+form:
+  default: text
+  variation_selectors:
+    none: text
+  emoji_form_exists: false
+
+weight_class: W1
+width_class: variable
+tier: 1
+
+semantic:
+  primary: prose:trailing-thought
+  also:
+    - prose:omission
+    - state:pending-typing
+    - mark:continuation-prose
+  not:
+    - "technical overflow (use ⋯)"
+    - vertical overflow
+    - bullet
+
+pairs_with:
+  complement: null
+  next_in_set:
+    - "⋯ (MIDLINE HORIZONTAL ELLIPSIS)"
+    - "⋮ (VERTICAL ELLIPSIS)"
+  family:
+    - "… ⋯ ⋮ ⋰ ⋱"
+
+visual_neighbors:
+  - "⋯ (MIDLINE HORIZONTAL ELLIPSIS) — midline-aligned, UI"
+  - "... (three full stops) — three glyphs, less typographic"
+  - "⁝ (TRICOLON) — punctuation, vertical"
+
+prefer_over:
+  - "... (three full stops) — … is one glyph, scales cleanly"
+  - "⋯ in body prose — ⋯ is midline-aligned and tech-flavoured"
+  - "more dots in casual chat (..) — … is the convention"
+
+prefer_under:
+  - "⋯ in technical UIs aligned with status dots"
+  - "... in code/identifier contexts where typographic ellipsis is unsafe"
+
+anti_uses:
+  - "As status overflow in monospace HUDs — use ⋯ (midline alignment)"
+  - "Inside <code> blocks — distracts"
+  - "Doubled (…… or … ⋯) — pick one"
+  - "Inside identifiers/URLs"
+
+platforms:
+  telegram_ios:      { renders: unverified }
+  telegram_android:  { renders: unverified }
+  telegram_desktop:  { renders: unverified }
+  telegram_web:      { renders: unverified }
+  imessage:          { renders: unverified }
+  whatsapp:          { renders: unverified }
+  discord:           { renders: unverified }
+  slack:             { renders: unverified }
+  github_markdown:   { renders: unverified }
+  vscode_default:    { renders: unverified }
+  terminal_monaco:   { renders: unverified }
+  terminal_cascadia: { renders: unverified }
+  terminal_jetbrains_mono: { renders: unverified }
+  chrome:            { renders: unverified }
+  safari:            { renders: unverified }
+  firefox:           { renders: unverified }
+  print_pdf:         { renders: unverified }
+
+rtl_behavior:
+  mirrors: false
+  arabic_equivalent: null
+  safe_in_rtl: true
+
+copy_paste_safe: true
+monochrome_guaranteed: true
+
+vibes:
+  - modern-minimal
+  - maximalist-decorative
+  - rtl-arabic-elegant
+  - scientific-technical
+
+examples:
+  - context: "Trailing thought in prose"
+    snippet: "we'll see how this goes…"
+  - context: "Typing indicator in chat"
+    snippet: "kariem is typing…"
+  - context: "Truncated quotation"
+    snippet: "\"in a hole in the ground…\" — tolkien"
+  - context: "Cut-off prose preview"
+    snippet: "this skill activates when you are…"
+
+cross_references:
+  pairs:
+    - "pairs.md#ellipsis-pair"
+  sets:
+    - "sets.md#ellipsis-directions"
+  widgets:
+    - "widgets.md#prose-preview"
+    - "widgets.md#typing-indicator"
+
+added_in: 0.1.0
+last_verified: 2026-05-19

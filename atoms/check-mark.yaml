@@ -1,0 +1,135 @@
+# atoms/check-mark.yaml
+# Universal success/completion mark. The single most reached-for "done" glyph.
+# Text-form default — its emoji-form ✅ (with VS16) is a different aesthetic.
+glyph: ✓
+name: CHECK MARK
+codepoint: U+2713
+unicode_block: Dingbats
+unicode_version: "1.1"
+
+aliases:
+  - check
+  - tick
+  - done
+  - success
+  - confirmed
+  - approved
+  - passed
+  - complete
+
+form:
+  default: text
+  variation_selectors:
+    "VS15 (U+FE0E)": text
+    "VS16 (U+FE0F)": emoji
+  emoji_form_exists: true
+
+weight_class: W2
+width_class: variable
+
+tier: 0
+
+semantic:
+  primary: state:success
+  also:
+    - state:done
+    - state:approved
+    - test:passed
+    - task:complete
+    - input:confirmed
+  not:
+    - decoration
+    - bullet
+    - multiplication
+
+pairs_with:
+  complement: ✗ (BALLOT X)
+  next_in_set:
+    - ✔ (HEAVY CHECK MARK)
+    - ☑ (BALLOT BOX WITH CHECK)
+  family:
+    - ✔ (HEAVY CHECK MARK)
+    - ✅ (WHITE HEAVY CHECK MARK — emoji)
+    - ☑ (BALLOT BOX WITH CHECK)
+    - 🗸 (LIGHT CHECK MARK)
+
+visual_neighbors:
+  - ✔ (HEAVY CHECK MARK) — W3, bolder stroke
+  - ✅ (WHITE HEAVY CHECK MARK) — emoji surface
+  - 🗸 (LIGHT CHECK MARK) — W0, hairline
+  - ✕ (MULTIPLICATION X) — wrong semantics
+  - ☑ (BALLOT BOX WITH CHECK) — wrapped in box
+
+prefer_over:
+  - "✔ when matching W1/W2 dot weights — ✔ is heavier"
+  - "✅ in monochrome UIs and code contexts — emoji breaks surface"
+  - "[OK] in modern-minimal vibes — ✓ is denser, no brackets needed"
+  - "👍 in factual confirmation — ✓ is neutral, 👍 is social"
+
+prefer_under:
+  - "✔ in standalone CTAs where bolder stroke aids recognition"
+  - "✅ in chat/social surfaces where colour reinforces meaning"
+
+anti_uses:
+  - "Inside <code> next to ⚠️ (emoji warning) — surface collision"
+  - "As multiplication sign — use × (U+00D7) or ⋅"
+  - "In severity ladders — use ●/○ progression, ✓ is binary"
+  - "Stacked vertically without spacing — strokes visually merge"
+
+platforms:
+  telegram_ios:      { renders: unverified }
+  telegram_android:  { renders: unverified }
+  telegram_desktop:  { renders: unverified }
+  telegram_web:      { renders: unverified }
+  imessage:          { renders: unverified }
+  whatsapp:          { renders: unverified }
+  discord:           { renders: unverified }
+  slack:             { renders: unverified }
+  github_markdown:   { renders: unverified }
+  vscode_default:    { renders: unverified }
+  terminal_monaco:   { renders: unverified }
+  terminal_cascadia: { renders: unverified }
+  terminal_jetbrains_mono: { renders: unverified }
+  chrome:            { renders: unverified }
+  safari:            { renders: unverified }
+  firefox:           { renders: unverified }
+  print_pdf:         { renders: unverified }
+
+rtl_behavior:
+  mirrors: false
+  arabic_equivalent: null
+  safe_in_rtl: true
+
+copy_paste_safe: true
+monochrome_guaranteed: true
+
+vibes:
+  - terminal-hacker
+  - modern-minimal
+  - maximalist-decorative
+  - rtl-arabic-elegant
+  - game-ui
+  - status-operational
+  - diff-patch
+
+examples:
+  - context: "CI step report"
+    snippet: "✓ lint   ✓ types   ✗ tests   ⋯ deploy"
+  - context: "Checklist row"
+    snippet: "✓ schema validated"
+  - context: "Form confirmation"
+    snippet: "✓ email · ✓ password · ○ 2FA"
+  - context: "Diff/review approval"
+    snippet: "✓ approved by @kariem"
+
+cross_references:
+  pairs:
+    - "pairs.md#check-x-pair"
+  sets:
+    - "sets.md#binary-state-marks"
+  widgets:
+    - "widgets.md#ci-status"
+    - "widgets.md#checklist"
+
+added_in: 0.1.0
+last_verified: 2026-05-19

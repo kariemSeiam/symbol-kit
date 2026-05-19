@@ -1,0 +1,116 @@
+# atoms/arabic-tatweel.yaml
+# Kashida — Arabic justification character. Stretches the connection between
+# letters. Use to fill RTL space, never to fill LTR space. Critical glyph for
+# Vibe 04 (rtl-arabic-elegant) and the KASHIDA_FILL() grammar function.
+glyph: ـ
+name: ARABIC TATWEEL
+codepoint: U+0640
+unicode_block: Arabic
+unicode_version: "1.1"
+
+aliases:
+  - tatweel
+  - kashida
+  - arabic justification mark
+  - arabic stretch
+  - the stretch char
+
+form:
+  default: text
+  variation_selectors:
+    none: text
+  emoji_form_exists: false
+
+weight_class: W1
+width_class: variable
+tier: 1
+
+semantic:
+  primary: arabic:justification-fill
+  also:
+    - arabic:letter-extender
+    - rtl:width-padding
+    - calligraphy:elongation
+  not:
+    - LTR underscore
+    - dash
+    - LTR fill character
+
+pairs_with:
+  complement: null
+  next_in_set: []
+  family:
+    - "ـ (the only kashida glyph)"
+
+visual_neighbors:
+  - "_ (LOW LINE) — LTR underscore, baseline"
+  - "- (HYPHEN-MINUS) — narrower, breaks Arabic connection"
+  - "‐ (HYPHEN) — punctuation"
+  - "ـ at line boundaries — must not appear at word edge alone"
+
+prefer_over:
+  - "Repeated spaces for RTL justification — kashida is the canonical Arabic mechanism"
+  - "_ for filler in Arabic context — _ is LTR, breaks shaping"
+  - "ASCII space-padding when meaningful RTL alignment is required"
+
+prefer_under:
+  - "Spaces in casual non-formal Arabic UI where stretching is unwanted"
+  - "Never inside a font that doesn't shape Arabic — fallback fonts render isolated tatweel as a bare dash"
+
+anti_uses:
+  - "Adjacent to LTR characters — shaping breaks at the boundary"
+  - "Inside identifiers/URLs/code — silent invisible width hazard"
+  - "Doubled or tripled in body Arabic prose — looks like elongated mistake"
+  - "Mixed with western dashes — typographic confusion"
+
+platforms:
+  telegram_ios:      { renders: unverified }
+  telegram_android:  { renders: unverified }
+  telegram_desktop:  { renders: unverified }
+  telegram_web:      { renders: unverified }
+  imessage:          { renders: unverified }
+  whatsapp:          { renders: unverified }
+  discord:           { renders: unverified }
+  slack:             { renders: unverified }
+  github_markdown:   { renders: unverified }
+  vscode_default:    { renders: unverified }
+  terminal_monaco:   { renders: unverified }
+  terminal_cascadia: { renders: unverified }
+  terminal_jetbrains_mono: { renders: unverified }
+  chrome:            { renders: unverified }
+  safari:            { renders: unverified }
+  firefox:           { renders: unverified }
+  print_pdf:         { renders: unverified }
+
+rtl_behavior:
+  mirrors: false
+  arabic_equivalent: ـ
+  safe_in_rtl: true
+
+copy_paste_safe: true
+monochrome_guaranteed: true
+
+vibes:
+  - rtl-arabic-elegant
+
+examples:
+  - context: "Justified Arabic header (RTL)"
+    snippet: "جيولينكـــــــــ"
+  - context: "Inline RTL alignment for a status word"
+    snippet: "● مباشرـــــــ ٤٧مل‌ث"
+  - context: "Arabic decorative title with kashida"
+    snippet: "النظامـــ المتكامل"
+  - context: "Filling space in a card title"
+    snippet: "لوحة الحالةـــــــــــــــ"
+
+cross_references:
+  pairs:
+    - "pairs.md#arabic-shapers"
+  sets:
+    - "sets.md#arabic-justification"
+  widgets:
+    - "widgets.md#arabic-header"
+    - "widgets.md#arabic-status-line"
+
+added_in: 0.1.0
+last_verified: 2026-05-19

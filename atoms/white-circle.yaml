@@ -1,0 +1,132 @@
+# atoms/white-circle.yaml
+# The canonical "off" / "offline" / "empty" indicator. Complement of BLACK
+# CIRCLE (●). Together with ◐ they form the three-state status triad.
+glyph: ○
+name: WHITE CIRCLE
+codepoint: U+25CB
+unicode_block: Geometric Shapes
+unicode_version: "1.1"
+
+aliases:
+  - empty dot
+  - hollow dot
+  - outline dot
+  - offline indicator
+  - off indicator
+  - empty bullet
+  - the dark one
+  - absence dot
+
+form:
+  default: text
+  variation_selectors:
+    none: text
+  emoji_form_exists: false
+
+weight_class: W1
+width_class: variable
+
+tier: 0
+
+semantic:
+  primary: status:off
+  also:
+    - status:offline
+    - severity:empty
+    - rating:empty-step
+    - presence:absent
+    - progress:empty-cell
+  not:
+    - decoration
+    - body-prose bullet
+    - degree sign
+
+pairs_with:
+  complement: ● (BLACK CIRCLE)
+  next_in_set:
+    - ◐ (CIRCLE WITH LEFT HALF BLACK)
+    - ◑ (CIRCLE WITH RIGHT HALF BLACK)
+  family:
+    - ◯ (LARGE CIRCLE)
+    - ⊙ (CIRCLED DOT OPERATOR)
+    - ⊚ (CIRCLED RING OPERATOR)
+
+visual_neighbors:
+  - ◯ (LARGE CIRCLE) — bigger, W2
+  - ⚪ (MEDIUM WHITE CIRCLE) — emoji-form
+  - ° (DEGREE SIGN) — superscript position, smaller
+  - ∘ (RING OPERATOR) — math, smaller
+  - ⭕ (HOLLOW RED CIRCLE) — colour emoji
+  - ◌ (DOTTED CIRCLE) — combining-class placeholder
+
+prefer_over:
+  - "◯ when paired with ● — match weight"
+  - "° in status contexts — ° is degree/superscript semantics"
+  - "⚪ in monochrome surfaces — emoji breaks the surface"
+
+prefer_under:
+  - "◯ in standalone iconography where extra size aids recognition"
+
+anti_uses:
+  - "As bullet in body prose — use ◦ or • instead, ○ reads as status:off"
+  - "Adjacent to ٠ (ARABIC-INDIC DIGIT ZERO) in RTL — visual conflation"
+  - "Inside <code> next to ⚪ — text/emoji size collision"
+  - "As placeholder for missing data — use ⋯ or ∅ (empty set) instead"
+
+platforms:
+  telegram_ios:      { renders: unverified }
+  telegram_android:  { renders: unverified }
+  telegram_desktop:  { renders: unverified }
+  telegram_web:      { renders: unverified }
+  imessage:          { renders: unverified }
+  whatsapp:          { renders: unverified }
+  discord:           { renders: unverified }
+  slack:             { renders: unverified }
+  github_markdown:   { renders: unverified }
+  vscode_default:    { renders: unverified }
+  terminal_monaco:   { renders: unverified }
+  terminal_cascadia: { renders: unverified }
+  terminal_jetbrains_mono: { renders: unverified }
+  chrome:            { renders: unverified }
+  safari:            { renders: unverified }
+  firefox:           { renders: unverified }
+  print_pdf:         { renders: unverified }
+
+rtl_behavior:
+  mirrors: false
+  arabic_equivalent: null
+  safe_in_rtl: true
+
+copy_paste_safe: true
+monochrome_guaranteed: true
+
+vibes:
+  - terminal-hacker
+  - modern-minimal
+  - rtl-arabic-elegant
+  - scientific-technical
+  - game-ui
+  - status-operational
+
+examples:
+  - context: "Telegram footer with offline indicator"
+    snippet: "○ paused · 0ms · 0%"
+  - context: "Mixed state health board"
+    snippet: "● geolink-api   ◐ hvar-cron   ○ taxi-arab"
+  - context: "Severity ladder 1/4"
+    snippet: "● ○ ○ ○"
+  - context: "Empty rating, awaiting input"
+    snippet: "○ ○ ○ ○ ○"
+
+cross_references:
+  pairs:
+    - "pairs.md#filled-empty-circles"
+  sets:
+    - "sets.md#severity-dots"
+    - "sets.md#circle-fill-progression"
+  widgets:
+    - "widgets.md#status-line"
+    - "widgets.md#health-card"
+
+added_in: 0.1.0
+last_verified: 2026-05-19

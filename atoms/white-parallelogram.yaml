@@ -1,0 +1,120 @@
+# atoms/white-parallelogram.yaml
+# Empty progress cell. The "▱" half of the PROGRESS() bar pair.
+glyph: ▱
+name: WHITE PARALLELOGRAM
+codepoint: U+25B1
+unicode_block: Geometric Shapes
+unicode_version: "3.2"
+
+aliases:
+  - empty pill
+  - empty progress cell
+  - hollow rounded square
+  - hollow tile
+  - progress empty
+  - bar empty
+
+form:
+  default: text
+  variation_selectors:
+    none: text
+  emoji_form_exists: false
+
+weight_class: W3
+width_class: variable
+
+tier: 0
+
+semantic:
+  primary: progress:empty-cell
+  also:
+    - tile:empty
+    - bar:empty-segment
+    - intensity:low-step
+    - pill:off
+  not:
+    - geometric parallelogram in math
+    - decoration
+
+pairs_with:
+  complement: ▰ (BLACK PARALLELOGRAM)
+  next_in_set:
+    - ▰ (BLACK PARALLELOGRAM)
+  family:
+    - ▰ ▱ ■ □ ▮ ▯ ▪ ▫
+
+visual_neighbors:
+  - □ (WHITE SQUARE) — sharper edges
+  - ▯ (WHITE VERTICAL RECTANGLE) — taller than wide
+  - ░ (LIGHT SHADE) — textured, dot-matrix fill
+  - ▢ (WHITE SQUARE WITH ROUNDED CORNERS)
+  - ⬜ (WHITE LARGE SQUARE) — emoji surface
+
+prefer_over:
+  - "□ for progress segments — ▱ slant matches ▰ as a pair"
+  - "░ for empty progress segments — ░ implies partial fill"
+  - "⬜ in monochrome contexts — emoji breaks surface"
+
+prefer_under:
+  - "░ in dense terminal contexts where dot-matrix empty cells signal ‘background’"
+  - "□ in scientific/typographic contexts paired with ■"
+
+anti_uses:
+  - "Mixed with ░ (LIGHT SHADE) in same bar — texture clash"
+  - "As lone glyph for ‘inactive’ — use ○ instead, ▱ is bar context"
+  - "Tiled into empty rules — use ─ or space, ▱ has internal shape"
+  - "Adjacent to its filled pair in differing weight class — both must be W3"
+
+platforms:
+  telegram_ios:      { renders: unverified }
+  telegram_android:  { renders: unverified }
+  telegram_desktop:  { renders: unverified }
+  telegram_web:      { renders: unverified }
+  imessage:          { renders: unverified }
+  whatsapp:          { renders: unverified }
+  discord:           { renders: unverified }
+  slack:             { renders: unverified }
+  github_markdown:   { renders: unverified }
+  vscode_default:    { renders: unverified }
+  terminal_monaco:   { renders: unverified }
+  terminal_cascadia: { renders: unverified }
+  terminal_jetbrains_mono: { renders: unverified }
+  chrome:            { renders: unverified }
+  safari:            { renders: unverified }
+  firefox:           { renders: unverified }
+  print_pdf:         { renders: unverified }
+
+rtl_behavior:
+  mirrors: false
+  arabic_equivalent: □ (WHITE SQUARE)
+  safe_in_rtl: true
+
+copy_paste_safe: true
+monochrome_guaranteed: true
+
+vibes:
+  - terminal-hacker
+  - modern-minimal
+  - status-operational
+
+examples:
+  - context: "Empty progress"
+    snippet: "▱▱▱▱▱▱▱▱▱▱  0%"
+  - context: "Idle queue, no fill yet"
+    snippet: "○ taxi-arab  ▱▱▱▱▱▱▱▱▱▱"
+  - context: "Sparse rating, awaiting input"
+    snippet: "▱▱▱▱▱"
+  - context: "Multi-bar with one stalled"
+    snippet: "▰▰▰▰▰▰▰▱▱▱  geo\n▱▱▱▱▱▱▱▱▱▱  hvar (waiting)"
+
+cross_references:
+  pairs:
+    - "pairs.md#filled-empty-pills"
+  sets:
+    - "sets.md#progress-cells"
+  widgets:
+    - "widgets.md#progress-bar"
+    - "widgets.md#multi-bar-card"
+
+added_in: 0.1.0
+last_verified: 2026-05-19

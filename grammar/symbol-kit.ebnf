@@ -1,0 +1,21 @@
+(* symbol-kit composition DSL — EBNF *)
+
+expression   = literal | atom | invocation | repetition | sequence ;
+literal      = '"', { char }, '"' ;
+atom         = '@', identifier ;
+invocation   = identifier, '(', [ args ], ')' ;
+repetition   = expression, '×', integer ;
+sequence     = expression, { '+', expression } ;
+args         = expression, { ',', expression } ;
+identifier   = letter, { letter | digit | '-' | '_' } ;
+integer      = digit, { digit } ;
+float        = digit, { digit }, '.', digit, { digit } ;
+string       = '"', { char }, '"' ;
+
+(* terminal classes *)
+letter       = 'a' | ... | 'z' | 'A' | ... | 'Z' ;
+digit        = '0' | ... | '9' ;
+char         = any Unicode character except '"' ;
+
+(* whitespace is insignificant between tokens *)
+whitespace   = ' ' | '\t' | '\n' | '\r' ;

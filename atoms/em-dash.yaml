@@ -1,0 +1,132 @@
+# atoms/em-dash.yaml
+# Structural divider. Stronger than the middle dot, calmer than a heading.
+# A full em wide in proportional fonts; one cell in monospace.
+glyph: —
+name: EM DASH
+codepoint: U+2014
+unicode_block: General Punctuation
+unicode_version: "1.1"
+
+aliases:
+  - emdash
+  - long dash
+  - section divider
+  - parenthetical dash
+  - the break
+  - structural dash
+
+form:
+  default: text
+  variation_selectors:
+    none: text
+  emoji_form_exists: false
+
+weight_class: W1
+width_class: variable
+
+tier: 0
+
+semantic:
+  primary: separator:structural
+  also:
+    - separator:parenthetical
+    - separator:thought-break
+    - line:divider-soft
+    - attribution:dash
+  not:
+    - hyphen
+    - minus sign
+    - bullet
+    - range indicator
+
+pairs_with:
+  complement: null
+  next_in_set:
+    - – (EN DASH)
+    - ─ (BOX DRAWINGS LIGHT HORIZONTAL)
+    - ━ (BOX DRAWINGS HEAVY HORIZONTAL)
+  family:
+    - "- – — ─ ━ ⎯ ―"
+
+visual_neighbors:
+  - "– (EN DASH) — narrower, ranges"
+  - "- (HYPHEN-MINUS) — narrower still, compounds/code"
+  - "─ (BOX DRAWINGS LIGHT HORIZONTAL) — for actual lines/rules"
+  - "― (HORIZONTAL BAR) — quotation/attribution"
+  - "‒ (FIGURE DASH) — for figure-aligned spacing"
+
+prefer_over:
+  - "– (EN DASH) for thought-break — — has the right weight"
+  - "- (HYPHEN-MINUS) for separators — - reads as compound or minus"
+  - "─ (LIGHT HORIZONTAL) in inline text — ─ is meant to tile into rules"
+  - "...  (ellipsis) for trailing thought when the thought is interrupted — — is interruption, … is trailing"
+
+prefer_under:
+  - "– (EN DASH) for numeric ranges (2024–2026) — — is too strong"
+  - "─ (LIGHT HORIZONTAL) when drawing actual horizontal rules"
+  - "― (HORIZONTAL BAR) for attribution following a quote in proper typography"
+
+anti_uses:
+  - "As minus sign in math — use − (MINUS SIGN) for typographic correctness"
+  - "Tiled to make rules in monospace — use ─ (it tiles cleanly, — does not)"
+  - "Inside <code> — distracts; use - or — only outside code spans"
+  - "Repeated as ——— for emphasis — write the thing, don't draw it"
+
+platforms:
+  telegram_ios:      { renders: unverified }
+  telegram_android:  { renders: unverified }
+  telegram_desktop:  { renders: unverified }
+  telegram_web:      { renders: unverified }
+  imessage:          { renders: unverified }
+  whatsapp:          { renders: unverified }
+  discord:           { renders: unverified }
+  slack:             { renders: unverified }
+  github_markdown:   { renders: unverified }
+  vscode_default:    { renders: unverified }
+  terminal_monaco:   { renders: unverified }
+  terminal_cascadia: { renders: unverified }
+  terminal_jetbrains_mono: { renders: unverified }
+  chrome:            { renders: unverified }
+  safari:            { renders: unverified }
+  firefox:           { renders: unverified }
+  print_pdf:         { renders: unverified }
+
+rtl_behavior:
+  mirrors: false
+  arabic_equivalent: null
+  safe_in_rtl: true
+
+copy_paste_safe: true
+monochrome_guaranteed: true
+
+vibes:
+  - terminal-hacker
+  - modern-minimal
+  - maximalist-decorative
+  - rtl-arabic-elegant
+  - scientific-technical
+  - game-ui
+  - status-operational
+  - diff-patch
+
+examples:
+  - context: "Quote attribution"
+    snippet: "the slow work is the kit. — COMPASS.md"
+  - context: "Parenthetical thought"
+    snippet: "the kit — and the agents that use it — must compose cleanly"
+  - context: "Section break in chat"
+    snippet: "—\nshipping v0.1.0 today\n—"
+  - context: "Status with emphasis"
+    snippet: "● live — but degraded"
+
+cross_references:
+  pairs:
+    - "pairs.md#dash-family"
+  sets:
+    - "sets.md#dash-weights"
+  widgets:
+    - "widgets.md#attribution-line"
+    - "widgets.md#section-break"
+
+added_in: 0.1.0
+last_verified: 2026-05-19

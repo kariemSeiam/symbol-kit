@@ -1,0 +1,123 @@
+# atoms/upwards-arrow.yaml
+glyph: ↑
+name: UPWARDS ARROW
+codepoint: U+2191
+unicode_block: Arrows
+unicode_version: "1.1"
+
+aliases:
+  - up arrow
+  - north arrow
+  - increase
+  - rise
+  - upgrade
+  - "ascending"
+
+form:
+  default: text
+  variation_selectors:
+    none: text
+  emoji_form_exists: false
+
+weight_class: W1
+width_class: variable
+tier: 1
+
+semantic:
+  primary: trend:up
+  also:
+    - direction:north
+    - delta:positive
+    - state:increased
+    - rank:promoted
+  not:
+    - decoration
+    - subscript marker
+
+pairs_with:
+  complement: ↓ (DOWNWARDS ARROW)
+  next_in_set:
+    - → (RIGHTWARDS ARROW)
+    - ↓ (DOWNWARDS ARROW)
+    - ← (LEFTWARDS ARROW)
+  family:
+    - "← → ↑ ↓ ↔ ↕"
+
+visual_neighbors:
+  - "▲ (BLACK UP-POINTING TRIANGLE) — solid, heavier"
+  - "⇑ (UPWARDS DOUBLE ARROW) — math doubled"
+  - "↗ (NORTH EAST ARROW) — diagonal"
+  - "⬆ (UPWARDS BLACK ARROW) — heavier"
+  - "|^| in monospace — not a glyph"
+
+prefer_over:
+  - "▲ when matching W1/W2 weights — ▲ is W3"
+  - "⬆ in monochrome surfaces — emoji-like upgrade"
+  - "↗ when emphasizing pure vertical, not gain over time"
+
+prefer_under:
+  - "▲ for emphasis (revenue ▲ 12%)"
+  - "↗ when implying a trend over a time axis (always rising)"
+
+anti_uses:
+  - "As superscript control char — not its purpose"
+  - "Mixed with ← → in same row without consistency"
+  - "Inline with W3/W4 atoms — weight clash"
+
+platforms:
+  telegram_ios:      { renders: unverified }
+  telegram_android:  { renders: unverified }
+  telegram_desktop:  { renders: unverified }
+  telegram_web:      { renders: unverified }
+  imessage:          { renders: unverified }
+  whatsapp:          { renders: unverified }
+  discord:           { renders: unverified }
+  slack:             { renders: unverified }
+  github_markdown:   { renders: unverified }
+  vscode_default:    { renders: unverified }
+  terminal_monaco:   { renders: unverified }
+  terminal_cascadia: { renders: unverified }
+  terminal_jetbrains_mono: { renders: unverified }
+  chrome:            { renders: unverified }
+  safari:            { renders: unverified }
+  firefox:           { renders: unverified }
+  print_pdf:         { renders: unverified }
+
+rtl_behavior:
+  mirrors: false
+  arabic_equivalent: null
+  safe_in_rtl: true
+
+copy_paste_safe: true
+monochrome_guaranteed: true
+
+vibes:
+  - terminal-hacker
+  - modern-minimal
+  - scientific-technical
+  - game-ui
+  - status-operational
+  - diff-patch
+
+examples:
+  - context: "Trend indicator"
+    snippet: "revenue ↑ 12%"
+  - context: "Promoted item"
+    snippet: "↑ moved to top"
+  - context: "Cardinal compass"
+    snippet: "  ↑ N\n← W   E →\n  ↓ S"
+  - context: "Vote count"
+    snippet: "↑ 47   ↓ 3"
+
+cross_references:
+  pairs:
+    - "pairs.md#cardinal-arrows"
+  sets:
+    - "sets.md#arrow-cardinals"
+    - "sets.md#trend-pair"
+  widgets:
+    - "widgets.md#trend-line"
+    - "widgets.md#voting"
+
+added_in: 0.1.0
+last_verified: 2026-05-19

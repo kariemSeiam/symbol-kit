@@ -1,0 +1,130 @@
+# atoms/warning-sign.yaml
+# The text-form (VS15) warning triangle. Default text rendering is the
+# monochrome version; VS16 makes it the orange-and-yellow emoji ⚠️.
+# In code surfaces always force VS15 or rely on text default.
+glyph: ⚠
+name: WARNING SIGN
+codepoint: U+26A0
+unicode_block: Miscellaneous Symbols
+unicode_version: "4.0"
+
+aliases:
+  - warning
+  - caution
+  - alert
+  - heads-up
+  - attention
+  - triangle warning
+  - danger sign
+
+form:
+  default: text
+  variation_selectors:
+    "VS15 (U+FE0E)": text
+    "VS16 (U+FE0F)": emoji
+  emoji_form_exists: true
+
+weight_class: W2
+width_class: variable
+
+tier: 0
+
+semantic:
+  primary: severity:warning
+  also:
+    - alert:caution
+    - state:degraded
+    - notice:read-me
+    - hazard:advisory
+  not:
+    - error
+    - decoration
+    - traffic-sign affect
+
+pairs_with:
+  complement: null
+  next_in_set:
+    - ⚡ (HIGH VOLTAGE SIGN)
+    - ⛔ (NO ENTRY)
+    - ☢ (RADIOACTIVE SIGN)
+  family:
+    - ⚠ ⚡ ⛔ ☢ ☣ ⚙
+
+visual_neighbors:
+  - ⚠️ (WARNING SIGN with VS16) — emoji-form
+  - △ (WHITE UP-POINTING TRIANGLE) — geometry only, no exclamation
+  - ⚡ (HIGH VOLTAGE SIGN) — energy/lightning semantics
+  - 🚨 (POLICE CARS REVOLVING LIGHT) — emoji alert
+  - 🟡 (LARGE YELLOW CIRCLE) — colour-only alert
+
+prefer_over:
+  - "⚠️ in <code>, terminal, and monochrome surfaces — VS16 forces emoji"
+  - "🚨 in technical UIs — 🚨 reads as siren/emergency, ⚠ is calibrated"
+  - "[WARN] when surrounded by W1/W2 atoms — text-form ⚠ matches weight"
+  - "🟡 when severity is qualitative — ⚠ encodes ‘read this’, colour does not"
+
+prefer_under:
+  - "⚠️ in chat/messaging surfaces where the emoji form carries colour signal"
+  - "⛔ when meaning is ‘blocked / do not proceed’, not advisory caution"
+
+anti_uses:
+  - "Without explicit VS15 in pinned Telegram messages — clients may upgrade to emoji"
+  - "In severity ladders — ⚠ is a category, not a step (use SEVERITY())"
+  - "Stacked next to ⚡ in same line — readers conflate them"
+  - "Inside dense status grids — the triangle outline competes with adjacent box-drawing"
+
+platforms:
+  telegram_ios:      { renders: unverified }
+  telegram_android:  { renders: unverified }
+  telegram_desktop:  { renders: unverified }
+  telegram_web:      { renders: unverified }
+  imessage:          { renders: unverified }
+  whatsapp:          { renders: unverified }
+  discord:           { renders: unverified }
+  slack:             { renders: unverified }
+  github_markdown:   { renders: unverified }
+  vscode_default:    { renders: unverified }
+  terminal_monaco:   { renders: unverified }
+  terminal_cascadia: { renders: unverified }
+  terminal_jetbrains_mono: { renders: unverified }
+  chrome:            { renders: unverified }
+  safari:            { renders: unverified }
+  firefox:           { renders: unverified }
+  print_pdf:         { renders: unverified }
+
+rtl_behavior:
+  mirrors: false
+  arabic_equivalent: null
+  safe_in_rtl: true
+
+copy_paste_safe: true
+monochrome_guaranteed: true
+
+vibes:
+  - terminal-hacker
+  - modern-minimal
+  - rtl-arabic-elegant
+  - game-ui
+  - status-operational
+
+examples:
+  - context: "Footer with advisory"
+    snippet: "● live · ⚠ certificate expires in 7d"
+  - context: "CI degraded run"
+    snippet: "⚠ flaky · 18/20 passed"
+  - context: "Health card warning"
+    snippet: "◐ hvar-cron · ⚠ retry-backoff 12s"
+  - context: "Migration banner"
+    snippet: "⚠ read MIGRATION.md before upgrading"
+
+cross_references:
+  pairs:
+    - "pairs.md#severity-markers"
+  sets:
+    - "sets.md#severity-categories"
+  widgets:
+    - "widgets.md#banner"
+    - "widgets.md#status-line"
+
+added_in: 0.1.0
+last_verified: 2026-05-19
