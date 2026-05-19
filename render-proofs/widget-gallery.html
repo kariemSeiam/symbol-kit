@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Widget Gallery — symbol-kit render proof</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { 
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #0d1117; color: #c9d1d9;
+    padding: 2rem;
+  }
+  h1 { color: #f0f6fc; margin-bottom: 0.5rem; }
+  .subtitle { color: #8b949e; margin-bottom: 2rem; font-size: 0.9rem; }
+  table { 
+    width: 100%; border-collapse: collapse;
+    margin-bottom: 3rem;
+  }
+  th, td { 
+    padding: 1rem; text-align: center;
+    border: 1px solid #21262d;
+  }
+  th { 
+    background: #161b22; color: #f0f6fc;
+    font-weight: 600; font-size: 0.85rem;
+  }
+  .glyph-cell { font-size: 2rem; line-height: 1.5; }
+  .glyph-standalone { font-size: 3rem; }
+  .glyph-code { 
+    font-family: ui-monospace, SF Mono, Cascadia Code, Consolas, monospace;
+    font-size: 1.2rem;
+  }
+  .glyph-pre { 
+    font-family: ui-monospace, SF Mono, Cascadia Code, Consolas, monospace;
+    font-size: 1rem; white-space: pre; text-align: left;
+    background: #0d1117; padding: 0.5rem;
+  }
+  .glyph-body { font-size: 1.2rem; text-align: left; }
+  .glyph-rtl { direction: rtl; text-align: right; font-size: 1.2rem; }
+  .atom-name { font-size: 0.7rem; color: #8b949e; }
+  .tier-badge { 
+    display: inline-block; padding: 0.1rem 0.5rem;
+    border-radius: 1rem; font-size: 0.7rem; font-weight: 600;
+  }
+  .tier-0 { background: #238636; color: #fff; }
+  .tier-1 { background: #1f6feb; color: #fff; }
+  .tier-2 { background: #8957e5; color: #fff; }
+  .tier-3 { background: #6e7681; color: #fff; }
+  .tier-4 { background: #21262d; color: #8b949e; }
+  .vibe-tag { 
+    display: inline-block; padding: 0.1rem 0.4rem;
+    border-radius: 0.3rem; font-size: 0.65rem; 
+    background: #21262d; color: #8b949e; margin: 0.1rem;
+  }
+  .status-yes { color: #3fb950; }
+  .status-tofu { color: #f85149; }
+  .status-unverified { color: #8b949e; }
+  .separator { border-top: 2px solid #30363d; }
+
+</style>
+</head>
+<body>
+<h1>Widget Gallery</h1>
+<div class="subtitle">symbol-kit · 7 widget examples</div>
+<div class="widget-section">
+<h3>Widget 1</h3>
+<pre style="font-family: ui-monospace, SF Mono, Cascadia Code, Consolas, monospace; 
+     font-size: 1rem; background: #161b22; padding: 1rem; border-radius: 0.5rem;
+     line-height: 1.6; overflow-x: auto;">
+● live · 47ms · 99.9%  →  dashboard
+</pre>
+</div>
+<div class="widget-section">
+<h3>Widget 2</h3>
+<pre style="font-family: ui-monospace, SF Mono, Cascadia Code, Consolas, monospace; 
+     font-size: 1rem; background: #161b22; padding: 1rem; border-radius: 0.5rem;
+     line-height: 1.6; overflow-x: auto;">
+▰▰▰▰▰▰▱▱▱▱  60%
+</pre>
+</div>
+<div class="widget-section">
+<h3>Widget 3</h3>
+<pre style="font-family: ui-monospace, SF Mono, Cascadia Code, Consolas, monospace; 
+     font-size: 1rem; background: #161b22; padding: 1rem; border-radius: 0.5rem;
+     line-height: 1.6; overflow-x: auto;">
+┌────────────────┐
+│ HEALTH BOARD   │
+├────────────────┤
+│ ● geolink-api  │
+│ ◐ hvar-cron    │
+│ ○ taxi-arab    │
+│ ⚠ build-queue  │
+└────────────────┘
+</pre>
+</div>
+<div class="widget-section">
+<h3>Widget 4</h3>
+<pre style="font-family: ui-monospace, SF Mono, Cascadia Code, Consolas, monospace; 
+     font-size: 1rem; background: #161b22; padding: 1rem; border-radius: 0.5rem;
+     line-height: 1.6; overflow-x: auto;">
+● ● ● ○ ○  3/5
+</pre>
+</div>
+<div class="widget-section">
+<h3>Widget 5</h3>
+<pre style="font-family: ui-monospace, SF Mono, Cascadia Code, Consolas, monospace; 
+     font-size: 1rem; background: #161b22; padding: 1rem; border-radius: 0.5rem;
+     line-height: 1.6; overflow-x: auto;">
+repo/
+├── src/
+│   ├── index.ts
+│   └── utils/
+│       └── helpers.ts
+└── package.json
+</pre>
+</div>
+<div class="widget-section">
+<h3>Widget 6</h3>
+<pre style="font-family: ui-monospace, SF Mono, Cascadia Code, Consolas, monospace; 
+     font-size: 1rem; background: #161b22; padding: 1rem; border-radius: 0.5rem;
+     line-height: 1.6; overflow-x: auto;">
+CPU    ▓▓▓▓▓░░░  62%
+MEM    ▓▓▓▓░░░░░  41%
+DISK   ▓▓▓▓▓▓▓░░░  78%
+</pre>
+</div>
+<div class="widget-section">
+<h3>Widget 7</h3>
+<pre style="font-family: ui-monospace, SF Mono, Cascadia Code, Consolas, monospace; 
+     font-size: 1rem; background: #161b22; padding: 1rem; border-radius: 0.5rem;
+     line-height: 1.6; overflow-x: auto;">
++  added: 12 lines
+-  removed: 3 lines
+~  modified: 7 lines
+</pre>
+</div>
+</body>
+</html>

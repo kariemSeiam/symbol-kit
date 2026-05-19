@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tier 2 — Workshop — symbol-kit render proof</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { 
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #0d1117; color: #c9d1d9;
+    padding: 2rem;
+  }
+  h1 { color: #f0f6fc; margin-bottom: 0.5rem; }
+  .subtitle { color: #8b949e; margin-bottom: 2rem; font-size: 0.9rem; }
+  table { 
+    width: 100%; border-collapse: collapse;
+    margin-bottom: 3rem;
+  }
+  th, td { 
+    padding: 1rem; text-align: center;
+    border: 1px solid #21262d;
+  }
+  th { 
+    background: #161b22; color: #f0f6fc;
+    font-weight: 600; font-size: 0.85rem;
+  }
+  .glyph-cell { font-size: 2rem; line-height: 1.5; }
+  .glyph-standalone { font-size: 3rem; }
+  .glyph-code { 
+    font-family: ui-monospace, SF Mono, Cascadia Code, Consolas, monospace;
+    font-size: 1.2rem;
+  }
+  .glyph-pre { 
+    font-family: ui-monospace, SF Mono, Cascadia Code, Consolas, monospace;
+    font-size: 1rem; white-space: pre; text-align: left;
+    background: #0d1117; padding: 0.5rem;
+  }
+  .glyph-body { font-size: 1.2rem; text-align: left; }
+  .glyph-rtl { direction: rtl; text-align: right; font-size: 1.2rem; }
+  .atom-name { font-size: 0.7rem; color: #8b949e; }
+  .tier-badge { 
+    display: inline-block; padding: 0.1rem 0.5rem;
+    border-radius: 1rem; font-size: 0.7rem; font-weight: 600;
+  }
+  .tier-0 { background: #238636; color: #fff; }
+  .tier-1 { background: #1f6feb; color: #fff; }
+  .tier-2 { background: #8957e5; color: #fff; }
+  .tier-3 { background: #6e7681; color: #fff; }
+  .tier-4 { background: #21262d; color: #8b949e; }
+  .vibe-tag { 
+    display: inline-block; padding: 0.1rem 0.4rem;
+    border-radius: 0.3rem; font-size: 0.65rem; 
+    background: #21262d; color: #8b949e; margin: 0.1rem;
+  }
+  .status-yes { color: #3fb950; }
+  .status-tofu { color: #f85149; }
+  .status-unverified { color: #8b949e; }
+  .separator { border-top: 2px solid #30363d; }
+
+</style>
+</head>
+<body>
+<h1>Tier 2 — Workshop</h1>
+<div class="subtitle">57 atoms · symbol-kit render proof · generated 2026-05-19</div>
+<table>
+<thead><tr>
+  <th>Glyph</th><th>Metadata</th>
+  <th>Standalone</th><th>Body</th><th>&lt;code&gt;</th><th>&lt;pre&gt;</th><th>RTL</th>
+</tr></thead>
+<tbody>
+<tr>
+  <td style="font-size: 2.5rem;">≈</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">ALMOST EQUAL TO</div>
+    <div class="atom-name">U+2248</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">≈</td><td class="glyph-cell glyph-body">The glyph ≈ appears in running text like this. Status: ≈ active.</td><td class="glyph-cell glyph-code">status = <code>≈</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ≈ live       │
+│ ≈ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ≈ نشط · ≈ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">،</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">ARABIC COMMA</div>
+    <div class="atom-name">U+060C</div>
+    <div><span class="vibe-tag">rtl-arabic-elegant</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">،</td><td class="glyph-cell glyph-body">The glyph ، appears in running text like this. Status: ، active.</td><td class="glyph-cell glyph-code">status = <code>،</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ، live       │
+│ ، active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ، نشط · ، متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">؟</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">ARABIC QUESTION MARK</div>
+    <div class="atom-name">U+061F</div>
+    <div><span class="vibe-tag">rtl-arabic-elegant</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">؟</td><td class="glyph-cell glyph-body">The glyph ؟ appears in running text like this. Status: ؟ active.</td><td class="glyph-cell glyph-code">status = <code>؟</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ؟ live       │
+│ ؟ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ؟ نشط · ؟ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">؛</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">ARABIC SEMICOLON</div>
+    <div class="atom-name">U+061B</div>
+    <div><span class="vibe-tag">rtl-arabic-elegant</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">؛</td><td class="glyph-cell glyph-body">The glyph ؛ appears in running text like this. Status: ؛ active.</td><td class="glyph-cell glyph-code">status = <code>؛</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ؛ live       │
+│ ؛ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ؛ نشط · ؛ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">♣</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">BLACK CLUB SUIT</div>
+    <div class="atom-name">U+2663</div>
+    <div><span class="vibe-tag">game-ui</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">♣</td><td class="glyph-cell glyph-body">The glyph ♣ appears in running text like this. Status: ♣ active.</td><td class="glyph-cell glyph-code">status = <code>♣</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ♣ live       │
+│ ♣ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ♣ نشط · ♣ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">♦</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">BLACK DIAMOND SUIT</div>
+    <div class="atom-name">U+2666</div>
+    <div><span class="vibe-tag">game-ui</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">♦</td><td class="glyph-cell glyph-body">The glyph ♦ appears in running text like this. Status: ♦ active.</td><td class="glyph-cell glyph-code">status = <code>♦</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ♦ live       │
+│ ♦ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ♦ نشط · ♦ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">♥</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">BLACK HEART SUIT</div>
+    <div class="atom-name">U+2665</div>
+    <div><span class="vibe-tag">game-ui</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">♥</td><td class="glyph-cell glyph-body">The glyph ♥ appears in running text like this. Status: ♥ active.</td><td class="glyph-cell glyph-code">status = <code>♥</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ♥ live       │
+│ ♥ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ♥ نشط · ♥ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">▸</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">BLACK RIGHT-POINTING SMALL TRIANGLE</div>
+    <div class="atom-name">U+25B8</div>
+    <div><span class="vibe-tag">diff-patch</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">▸</td><td class="glyph-cell glyph-body">The glyph ▸ appears in running text like this. Status: ▸ active.</td><td class="glyph-cell glyph-code">status = <code>▸</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ▸ live       │
+│ ▸ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ▸ نشط · ▸ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">♠</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">BLACK SPADE SUIT</div>
+    <div class="atom-name">U+2660</div>
+    <div><span class="vibe-tag">game-ui</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">♠</td><td class="glyph-cell glyph-body">The glyph ♠ appears in running text like this. Status: ♠ active.</td><td class="glyph-cell glyph-code">status = <code>♠</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ♠ live       │
+│ ♠ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ♠ نشط · ♠ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">☀</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">BLACK SUN WITH RAYS</div>
+    <div class="atom-name">U+2600</div>
+    <div><span class="vibe-tag">game-ui</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">☀</td><td class="glyph-cell glyph-body">The glyph ☀ appears in running text like this. Status: ☀ active.</td><td class="glyph-cell glyph-code">status = <code>☀</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ☀ live       │
+│ ☀ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ☀ نشط · ☀ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">╮</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">BOX DRAWINGS LIGHT ARC DOWN AND LEFT</div>
+    <div class="atom-name">U+256E</div>
+    <div><span class="vibe-tag">maximalist-decorative</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">╮</td><td class="glyph-cell glyph-body">The glyph ╮ appears in running text like this. Status: ╮ active.</td><td class="glyph-cell glyph-code">status = <code>╮</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ╮ live       │
+│ ╮ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ╮ نشط · ╮ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">╭</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">BOX DRAWINGS LIGHT ARC DOWN AND RIGHT</div>
+    <div class="atom-name">U+256D</div>
+    <div><span class="vibe-tag">maximalist-decorative</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">╭</td><td class="glyph-cell glyph-body">The glyph ╭ appears in running text like this. Status: ╭ active.</td><td class="glyph-cell glyph-code">status = <code>╭</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ╭ live       │
+│ ╭ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ╭ نشط · ╭ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">╯</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">BOX DRAWINGS LIGHT ARC UP AND LEFT</div>
+    <div class="atom-name">U+256F</div>
+    <div><span class="vibe-tag">maximalist-decorative</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">╯</td><td class="glyph-cell glyph-body">The glyph ╯ appears in running text like this. Status: ╯ active.</td><td class="glyph-cell glyph-code">status = <code>╯</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ╯ live       │
+│ ╯ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ╯ نشط · ╯ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">╰</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">BOX DRAWINGS LIGHT ARC UP AND RIGHT</div>
+    <div class="atom-name">U+2570</div>
+    <div><span class="vibe-tag">maximalist-decorative</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">╰</td><td class="glyph-cell glyph-body">The glyph ╰ appears in running text like this. Status: ╰ active.</td><td class="glyph-cell glyph-code">status = <code>╰</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ╰ live       │
+│ ╰ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ╰ نشط · ╰ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">┼</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">BOX DRAWINGS LIGHT VERTICAL AND HORIZONTAL</div>
+    <div class="atom-name">U+253C</div>
+    <div><span class="vibe-tag">terminal-hacker</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">┼</td><td class="glyph-cell glyph-body">The glyph ┼ appears in running text like this. Status: ┼ active.</td><td class="glyph-cell glyph-code">status = <code>┼</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ┼ live       │
+│ ┼ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ┼ نشط · ┼ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">☁</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">CLOUD</div>
+    <div class="atom-name">U+2601</div>
+    <div><span class="vibe-tag">game-ui</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">☁</td><td class="glyph-cell glyph-body">The glyph ☁ appears in running text like this. Status: ☁ active.</td><td class="glyph-cell glyph-code">status = <code>☁</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ☁ live       │
+│ ☁ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ☁ نشط · ☁ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">∮</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">CONTOUR INTEGRAL</div>
+    <div class="atom-name">U+222E</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">∮</td><td class="glyph-cell glyph-body">The glyph ∮ appears in running text like this. Status: ∮ active.</td><td class="glyph-cell glyph-code">status = <code>∮</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ∮ live       │
+│ ∮ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ∮ نشط · ∮ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">≥</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREATER-THAN OR EQUAL TO</div>
+    <div class="atom-name">U+2265</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">≥</td><td class="glyph-cell glyph-body">The glyph ≥ appears in running text like this. Status: ≥ active.</td><td class="glyph-cell glyph-code">status = <code>≥</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ≥ live       │
+│ ≥ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ≥ نشط · ≥ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">α</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREEK SMALL LETTER ALPHA</div>
+    <div class="atom-name">U+03B1</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">α</td><td class="glyph-cell glyph-body">The glyph α appears in running text like this. Status: α active.</td><td class="glyph-cell glyph-code">status = <code>α</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ α live       │
+│ α active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: α نشط · α متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">β</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREEK SMALL LETTER BETA</div>
+    <div class="atom-name">U+03B2</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">β</td><td class="glyph-cell glyph-body">The glyph β appears in running text like this. Status: β active.</td><td class="glyph-cell glyph-code">status = <code>β</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ β live       │
+│ β active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: β نشط · β متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">χ</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREEK SMALL LETTER CHI</div>
+    <div class="atom-name">U+03C7</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">χ</td><td class="glyph-cell glyph-body">The glyph χ appears in running text like this. Status: χ active.</td><td class="glyph-cell glyph-code">status = <code>χ</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ χ live       │
+│ χ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: χ نشط · χ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">δ</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREEK SMALL LETTER DELTA</div>
+    <div class="atom-name">U+03B4</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">δ</td><td class="glyph-cell glyph-body">The glyph δ appears in running text like this. Status: δ active.</td><td class="glyph-cell glyph-code">status = <code>δ</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ δ live       │
+│ δ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: δ نشط · δ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">ε</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREEK SMALL LETTER EPSILON</div>
+    <div class="atom-name">U+03B5</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">ε</td><td class="glyph-cell glyph-body">The glyph ε appears in running text like this. Status: ε active.</td><td class="glyph-cell glyph-code">status = <code>ε</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ε live       │
+│ ε active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ε نشط · ε متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">γ</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREEK SMALL LETTER GAMMA</div>
+    <div class="atom-name">U+03B3</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">γ</td><td class="glyph-cell glyph-body">The glyph γ appears in running text like this. Status: γ active.</td><td class="glyph-cell glyph-code">status = <code>γ</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ γ live       │
+│ γ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: γ نشط · γ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">λ</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREEK SMALL LETTER LAMDA</div>
+    <div class="atom-name">U+03BB</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">λ</td><td class="glyph-cell glyph-body">The glyph λ appears in running text like this. Status: λ active.</td><td class="glyph-cell glyph-code">status = <code>λ</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ λ live       │
+│ λ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: λ نشط · λ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">μ</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREEK SMALL LETTER MU</div>
+    <div class="atom-name">U+03BC</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">μ</td><td class="glyph-cell glyph-body">The glyph μ appears in running text like this. Status: μ active.</td><td class="glyph-cell glyph-code">status = <code>μ</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ μ live       │
+│ μ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: μ نشط · μ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">ω</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREEK SMALL LETTER OMEGA</div>
+    <div class="atom-name">U+03C9</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">ω</td><td class="glyph-cell glyph-body">The glyph ω appears in running text like this. Status: ω active.</td><td class="glyph-cell glyph-code">status = <code>ω</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ω live       │
+│ ω active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ω نشط · ω متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">φ</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREEK SMALL LETTER PHI</div>
+    <div class="atom-name">U+03C6</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">φ</td><td class="glyph-cell glyph-body">The glyph φ appears in running text like this. Status: φ active.</td><td class="glyph-cell glyph-code">status = <code>φ</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ φ live       │
+│ φ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: φ نشط · φ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">π</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREEK SMALL LETTER PI</div>
+    <div class="atom-name">U+03C0</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">π</td><td class="glyph-cell glyph-body">The glyph π appears in running text like this. Status: π active.</td><td class="glyph-cell glyph-code">status = <code>π</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ π live       │
+│ π active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: π نشط · π متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">ψ</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREEK SMALL LETTER PSI</div>
+    <div class="atom-name">U+03C8</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">ψ</td><td class="glyph-cell glyph-body">The glyph ψ appears in running text like this. Status: ψ active.</td><td class="glyph-cell glyph-code">status = <code>ψ</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ψ live       │
+│ ψ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ψ نشط · ψ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">ρ</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREEK SMALL LETTER RHO</div>
+    <div class="atom-name">U+03C1</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">ρ</td><td class="glyph-cell glyph-body">The glyph ρ appears in running text like this. Status: ρ active.</td><td class="glyph-cell glyph-code">status = <code>ρ</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ρ live       │
+│ ρ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ρ نشط · ρ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">σ</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREEK SMALL LETTER SIGMA</div>
+    <div class="atom-name">U+03C3</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">σ</td><td class="glyph-cell glyph-body">The glyph σ appears in running text like this. Status: σ active.</td><td class="glyph-cell glyph-code">status = <code>σ</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ σ live       │
+│ σ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: σ نشط · σ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">τ</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREEK SMALL LETTER TAU</div>
+    <div class="atom-name">U+03C4</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">τ</td><td class="glyph-cell glyph-body">The glyph τ appears in running text like this. Status: τ active.</td><td class="glyph-cell glyph-code">status = <code>τ</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ τ live       │
+│ τ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: τ نشط · τ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">θ</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">GREEK SMALL LETTER THETA</div>
+    <div class="atom-name">U+03B8</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">θ</td><td class="glyph-cell glyph-body">The glyph θ appears in running text like this. Status: θ active.</td><td class="glyph-cell glyph-code">status = <code>θ</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ θ live       │
+│ θ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: θ نشط · θ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">≡</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">IDENTICAL TO</div>
+    <div class="atom-name">U+2261</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">≡</td><td class="glyph-cell glyph-body">The glyph ≡ appears in running text like this. Status: ≡ active.</td><td class="glyph-cell glyph-code">status = <code>≡</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ≡ live       │
+│ ≡ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ≡ نشط · ≡ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">∫</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">INTEGRAL</div>
+    <div class="atom-name">U+222B</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">∫</td><td class="glyph-cell glyph-body">The glyph ∫ appears in running text like this. Status: ∫ active.</td><td class="glyph-cell glyph-code">status = <code>∫</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ∫ live       │
+│ ∫ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ∫ نشط · ∫ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">⌈</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">LEFT CEILING</div>
+    <div class="atom-name">U+2308</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">⌈</td><td class="glyph-cell glyph-body">The glyph ⌈ appears in running text like this. Status: ⌈ active.</td><td class="glyph-cell glyph-code">status = <code>⌈</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ⌈ live       │
+│ ⌈ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ⌈ نشط · ⌈ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">⌊</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">LEFT FLOOR</div>
+    <div class="atom-name">U+230A</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">⌊</td><td class="glyph-cell glyph-body">The glyph ⌊ appears in running text like this. Status: ⌊ active.</td><td class="glyph-cell glyph-code">status = <code>⌊</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ⌊ live       │
+│ ⌊ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ⌊ نشط · ⌊ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">↩</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">LEFTWARDS ARROW WITH HOOK</div>
+    <div class="atom-name">U+21A9</div>
+    <div><span class="vibe-tag">diff-patch</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">↩</td><td class="glyph-cell glyph-body">The glyph ↩ appears in running text like this. Status: ↩ active.</td><td class="glyph-cell glyph-code">status = <code>↩</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ↩ live       │
+│ ↩ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ↩ نشط · ↩ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">≤</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">LESS-THAN OR EQUAL TO</div>
+    <div class="atom-name">U+2264</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">≤</td><td class="glyph-cell glyph-body">The glyph ≤ appears in running text like this. Status: ≤ active.</td><td class="glyph-cell glyph-code">status = <code>≤</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ≤ live       │
+│ ≤ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ≤ نشط · ≤ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">⟨</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">MATHEMATICAL LEFT ANGLE BRACKET</div>
+    <div class="atom-name">U+27E8</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">⟨</td><td class="glyph-cell glyph-body">The glyph ⟨ appears in running text like this. Status: ⟨ active.</td><td class="glyph-cell glyph-code">status = <code>⟨</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ⟨ live       │
+│ ⟨ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ⟨ نشط · ⟨ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">⟩</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">MATHEMATICAL RIGHT ANGLE BRACKET</div>
+    <div class="atom-name">U+27E9</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">⟩</td><td class="glyph-cell glyph-body">The glyph ⟩ appears in running text like this. Status: ⟩ active.</td><td class="glyph-cell glyph-code">status = <code>⟩</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ⟩ live       │
+│ ⟩ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ⟩ نشط · ⟩ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">∑</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">N-ARY SUMMATION</div>
+    <div class="atom-name">U+2211</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">∑</td><td class="glyph-cell glyph-body">The glyph ∑ appears in running text like this. Status: ∑ active.</td><td class="glyph-cell glyph-code">status = <code>∑</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ∑ live       │
+│ ∑ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ∑ نشط · ∑ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">∇</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">NABLA</div>
+    <div class="atom-name">U+2207</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">∇</td><td class="glyph-cell glyph-body">The glyph ∇ appears in running text like this. Status: ∇ active.</td><td class="glyph-cell glyph-code">status = <code>∇</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ∇ live       │
+│ ∇ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ∇ نشط · ∇ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">≠</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">NOT EQUAL TO</div>
+    <div class="atom-name">U+2260</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">≠</td><td class="glyph-cell glyph-body">The glyph ≠ appears in running text like this. Status: ≠ active.</td><td class="glyph-cell glyph-code">status = <code>≠</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ≠ live       │
+│ ≠ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ≠ نشط · ≠ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">∂</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">PARTIAL DIFFERENTIAL</div>
+    <div class="atom-name">U+2202</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">∂</td><td class="glyph-cell glyph-body">The glyph ∂ appears in running text like this. Status: ∂ active.</td><td class="glyph-cell glyph-code">status = <code>∂</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ∂ live       │
+│ ∂ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ∂ نشط · ∂ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">⌉</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">RIGHT CEILING</div>
+    <div class="atom-name">U+2309</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">⌉</td><td class="glyph-cell glyph-body">The glyph ⌉ appears in running text like this. Status: ⌉ active.</td><td class="glyph-cell glyph-code">status = <code>⌉</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ⌉ live       │
+│ ⌉ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ⌉ نشط · ⌉ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">⌋</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">RIGHT FLOOR</div>
+    <div class="atom-name">U+230B</div>
+    <div><span class="vibe-tag">scientific-technical</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">⌋</td><td class="glyph-cell glyph-body">The glyph ⌋ appears in running text like this. Status: ⌋ active.</td><td class="glyph-cell glyph-code">status = <code>⌋</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ⌋ live       │
+│ ⌋ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ⌋ نشط · ⌋ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">☃</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">SNOWMAN</div>
+    <div class="atom-name">U+2603</div>
+    <div><span class="vibe-tag">game-ui</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">☃</td><td class="glyph-cell glyph-body">The glyph ☃ appears in running text like this. Status: ☃ active.</td><td class="glyph-cell glyph-code">status = <code>☃</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ☃ live       │
+│ ☃ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ☃ نشط · ☃ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">☂</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">UMBRELLA</div>
+    <div class="atom-name">U+2602</div>
+    <div><span class="vibe-tag">game-ui</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">☂</td><td class="glyph-cell glyph-body">The glyph ☂ appears in running text like this. Status: ☂ active.</td><td class="glyph-cell glyph-code">status = <code>☂</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ☂ live       │
+│ ☂ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ☂ نشط · ☂ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">♗</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">WHITE CHESS BISHOP</div>
+    <div class="atom-name">U+2657</div>
+    <div><span class="vibe-tag">game-ui</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">♗</td><td class="glyph-cell glyph-body">The glyph ♗ appears in running text like this. Status: ♗ active.</td><td class="glyph-cell glyph-code">status = <code>♗</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ♗ live       │
+│ ♗ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ♗ نشط · ♗ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">♔</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">WHITE CHESS KING</div>
+    <div class="atom-name">U+2654</div>
+    <div><span class="vibe-tag">game-ui</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">♔</td><td class="glyph-cell glyph-body">The glyph ♔ appears in running text like this. Status: ♔ active.</td><td class="glyph-cell glyph-code">status = <code>♔</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ♔ live       │
+│ ♔ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ♔ نشط · ♔ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">♘</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">WHITE CHESS KNIGHT</div>
+    <div class="atom-name">U+2658</div>
+    <div><span class="vibe-tag">game-ui</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">♘</td><td class="glyph-cell glyph-body">The glyph ♘ appears in running text like this. Status: ♘ active.</td><td class="glyph-cell glyph-code">status = <code>♘</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ♘ live       │
+│ ♘ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ♘ نشط · ♘ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">♙</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">WHITE CHESS PAWN</div>
+    <div class="atom-name">U+2659</div>
+    <div><span class="vibe-tag">game-ui</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">♙</td><td class="glyph-cell glyph-body">The glyph ♙ appears in running text like this. Status: ♙ active.</td><td class="glyph-cell glyph-code">status = <code>♙</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ♙ live       │
+│ ♙ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ♙ نشط · ♙ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">♕</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">WHITE CHESS QUEEN</div>
+    <div class="atom-name">U+2655</div>
+    <div><span class="vibe-tag">game-ui</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">♕</td><td class="glyph-cell glyph-body">The glyph ♕ appears in running text like this. Status: ♕ active.</td><td class="glyph-cell glyph-code">status = <code>♕</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ♕ live       │
+│ ♕ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ♕ نشط · ♕ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">♖</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">WHITE CHESS ROOK</div>
+    <div class="atom-name">U+2656</div>
+    <div><span class="vibe-tag">game-ui</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">♖</td><td class="glyph-cell glyph-body">The glyph ♖ appears in running text like this. Status: ♖ active.</td><td class="glyph-cell glyph-code">status = <code>♖</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ♖ live       │
+│ ♖ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ♖ نشط · ♖ متاح</td>
+</tr>
+<tr>
+  <td style="font-size: 2.5rem;">▹</td>
+  <td style="text-align:left;">
+    <div style="font-weight:600;">WHITE RIGHT-POINTING SMALL TRIANGLE</div>
+    <div class="atom-name">U+25B9</div>
+    <div><span class="vibe-tag">diff-patch</span></div>
+  </td>
+  <td class="glyph-cell glyph-standalone">▹</td><td class="glyph-cell glyph-body">The glyph ▹ appears in running text like this. Status: ▹ active.</td><td class="glyph-cell glyph-code">status = <code>▹</code>;</td><td class="glyph-cell glyph-pre">┌─── status ───┐
+│ ▹ live       │
+│ ▹ active     │
+└──────────────┘</td><td class="glyph-cell glyph-rtl">الحالة: ▹ نشط · ▹ متاح</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

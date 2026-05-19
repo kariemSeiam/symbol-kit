@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RTL Arabic Showcase — symbol-kit render proof</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { 
+    font-family: system-ui, -apple-system, sans-serif;
+    background: #0d1117; color: #c9d1d9;
+    padding: 2rem;
+  }
+  h1 { color: #f0f6fc; margin-bottom: 0.5rem; }
+  .subtitle { color: #8b949e; margin-bottom: 2rem; font-size: 0.9rem; }
+  table { 
+    width: 100%; border-collapse: collapse;
+    margin-bottom: 3rem;
+  }
+  th, td { 
+    padding: 1rem; text-align: center;
+    border: 1px solid #21262d;
+  }
+  th { 
+    background: #161b22; color: #f0f6fc;
+    font-weight: 600; font-size: 0.85rem;
+  }
+  .glyph-cell { font-size: 2rem; line-height: 1.5; }
+  .glyph-standalone { font-size: 3rem; }
+  .glyph-code { 
+    font-family: ui-monospace, SF Mono, Cascadia Code, Consolas, monospace;
+    font-size: 1.2rem;
+  }
+  .glyph-pre { 
+    font-family: ui-monospace, SF Mono, Cascadia Code, Consolas, monospace;
+    font-size: 1rem; white-space: pre; text-align: left;
+    background: #0d1117; padding: 0.5rem;
+  }
+  .glyph-body { font-size: 1.2rem; text-align: left; }
+  .glyph-rtl { direction: rtl; text-align: right; font-size: 1.2rem; }
+  .atom-name { font-size: 0.7rem; color: #8b949e; }
+  .tier-badge { 
+    display: inline-block; padding: 0.1rem 0.5rem;
+    border-radius: 1rem; font-size: 0.7rem; font-weight: 600;
+  }
+  .tier-0 { background: #238636; color: #fff; }
+  .tier-1 { background: #1f6feb; color: #fff; }
+  .tier-2 { background: #8957e5; color: #fff; }
+  .tier-3 { background: #6e7681; color: #fff; }
+  .tier-4 { background: #21262d; color: #8b949e; }
+  .vibe-tag { 
+    display: inline-block; padding: 0.1rem 0.4rem;
+    border-radius: 0.3rem; font-size: 0.65rem; 
+    background: #21262d; color: #8b949e; margin: 0.1rem;
+  }
+  .status-yes { color: #3fb950; }
+  .status-tofu { color: #f85149; }
+  .status-unverified { color: #8b949e; }
+  .separator { border-top: 2px solid #30363d; }
+
+  body { direction: ltr; }
+
+</style>
+</head>
+<body>
+<h1>RTL Arabic Showcase</h1>
+<div class="subtitle">42 Arabic-context atoms · symbol-kit</div>
+<table>
+<thead><tr>
+  <th>Glyph</th><th dir="rtl">سياق عربي</th><th>Metadata</th>
+</tr></thead>
+<tbody>
+<tr>
+  <td style="font-size: 2rem;">،</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">، مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC COMMA<br><span class="atom-name">U+060C</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">٨</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">٨ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC-INDIC DIGIT EIGHT<br><span class="atom-name">U+0668</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">٥</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">٥ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC-INDIC DIGIT FIVE<br><span class="atom-name">U+0665</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">٤</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">٤ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC-INDIC DIGIT FOUR<br><span class="atom-name">U+0664</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">٩</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">٩ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC-INDIC DIGIT NINE<br><span class="atom-name">U+0669</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">١</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">١ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC-INDIC DIGIT ONE<br><span class="atom-name">U+0661</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">٧</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">٧ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC-INDIC DIGIT SEVEN<br><span class="atom-name">U+0667</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">٦</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">٦ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC-INDIC DIGIT SIX<br><span class="atom-name">U+0666</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">٣</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">٣ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC-INDIC DIGIT THREE<br><span class="atom-name">U+0663</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">٢</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">٢ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC-INDIC DIGIT TWO<br><span class="atom-name">U+0662</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">٠</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">٠ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC-INDIC DIGIT ZERO<br><span class="atom-name">U+0660</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">﷽</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">﷽ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC LIGATURE BISMILLAH AR-RAHMAN AR-RAHEEM<br><span class="atom-name">U+FDFD</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">ﷻ</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">ﷻ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC LIGATURE JALLAJALALOUHOU<br><span class="atom-name">U+FDFB</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">ﷺ</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">ﷺ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC LIGATURE SALLALLAHOU ALAYHE WASALLAM<br><span class="atom-name">U+FDFA</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">؟</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">؟ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC QUESTION MARK<br><span class="atom-name">U+061F</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">؛</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">؛ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC SEMICOLON<br><span class="atom-name">U+061B</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">۞</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">۞ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC START OF RUB EL HIZB<br><span class="atom-name">U+06DE</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">ـ</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">ـ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">ARABIC TATWEEL<br><span class="atom-name">U+0640</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">✗</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">✗ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">BALLOT X<br><span class="atom-name">U+2717</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">●</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">● مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">BLACK CIRCLE<br><span class="atom-name">U+25CF</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">┤</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">┤ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">BOX DRAWINGS LIGHT VERTICAL AND LEFT<br><span class="atom-name">U+2524</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">•</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">• مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">BULLET<br><span class="atom-name">U+2022</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">✓</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">✓ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">CHECK MARK<br><span class="atom-name">U+2713</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">◐</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">◐ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">CIRCLE WITH LEFT HALF BLACK<br><span class="atom-name">U+25D0</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">—</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">— مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">EM DASH<br><span class="atom-name">U+2014</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">–</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">– مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">EN DASH<br><span class="atom-name">U+2013</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">۸</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">۸ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">EXTENDED ARABIC-INDIC DIGIT EIGHT<br><span class="atom-name">U+06F8</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">۵</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">۵ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">EXTENDED ARABIC-INDIC DIGIT FIVE<br><span class="atom-name">U+06F5</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">۴</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">۴ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">EXTENDED ARABIC-INDIC DIGIT FOUR<br><span class="atom-name">U+06F4</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">۹</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">۹ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">EXTENDED ARABIC-INDIC DIGIT NINE<br><span class="atom-name">U+06F9</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">۱</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">۱ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">EXTENDED ARABIC-INDIC DIGIT ONE<br><span class="atom-name">U+06F1</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">۷</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">۷ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">EXTENDED ARABIC-INDIC DIGIT SEVEN<br><span class="atom-name">U+06F7</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">۶</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">۶ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">EXTENDED ARABIC-INDIC DIGIT SIX<br><span class="atom-name">U+06F6</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">۳</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">۳ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">EXTENDED ARABIC-INDIC DIGIT THREE<br><span class="atom-name">U+06F3</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">۲</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">۲ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">EXTENDED ARABIC-INDIC DIGIT TWO<br><span class="atom-name">U+06F2</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">۰</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">۰ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">EXTENDED ARABIC-INDIC DIGIT ZERO<br><span class="atom-name">U+06F0</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">…</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">… مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">HORIZONTAL ELLIPSIS<br><span class="atom-name">U+2026</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">←</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">← مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">LEFTWARDS ARROW<br><span class="atom-name">U+2190</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">·</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">· مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">MIDDLE DOT<br><span class="atom-name">U+00B7</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">⋯</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">⋯ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">MIDLINE HORIZONTAL ELLIPSIS<br><span class="atom-name">U+22EF</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">⚠</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">⚠ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">WARNING SIGN<br><span class="atom-name">U+26A0</span></td>
+</tr>
+<tr>
+  <td style="font-size: 2rem;">○</td>
+  <td style="text-align:right; font-size: 1.2rem;" dir="rtl">○ مثال نص عربي</td>
+  <td style="text-align:left; font-size: 0.8rem;">WHITE CIRCLE<br><span class="atom-name">U+25CB</span></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
