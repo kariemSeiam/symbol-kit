@@ -1,0 +1,29 @@
+{
+  "name": "symbol-kit",
+  "version": "0.1.0-rc.1",
+  "description": "Glyph design system — not a catalog. Compose with confidence across 8 vibes, 300+ atoms, and a DSL.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kariemSeiam/symbol-kit"
+  },
+  "scripts": {
+    "test": "bash scripts/ci.sh",
+    "test:python": "python3 grammar/python/test_symbolkit.py",
+    "test:render": "python3 scripts/render-harness.py",
+    "lint": "python3 scripts/lint-vibe.py && python3 scripts/lint-weight.py && python3 scripts/lint-tier-budget.py",
+    "validate": "python3 scripts/validate-atom.py atoms/"
+  },
+  "keywords": [
+    "glyph",
+    "unicode",
+    "symbol",
+    "design-system",
+    "composition",
+    "RTL",
+    "Arabic",
+    "monochrome",
+    "terminal",
+    "ui"
+  ]
+}
